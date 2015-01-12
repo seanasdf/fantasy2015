@@ -134,4 +134,6 @@ hitter_projections[1:50,c(1:2, 25,27)]
 
 
 hitter_projections <- hitter_projections[,c(1:9,25:27)]
+
+hitter_projections <- filter(hitter_projections, dollar_value >= -5)
 write.csv(hitter_projections, file = "hitter_projections.csv")
