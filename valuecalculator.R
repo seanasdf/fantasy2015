@@ -146,5 +146,9 @@ hitter_projections <- filter(hitter_projections, dollar_value >= -5)
 #keep only relevant columns
 hitter_projections <- select(hitter_projections, Name, position, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
 
+#round dollar values and adjusted points
+hitter_projections$adjusted_points <- round(hitter_projections$adjusted_points, digits = 2)
+hitter_projections$dollar_value <- round(hitter_projections$dollar_value, digits = 2)
+
 #output to a csv
 write.csv(hitter_projections, file = "hitter_projections.csv")
