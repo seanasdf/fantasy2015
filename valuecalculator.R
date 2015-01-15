@@ -133,7 +133,9 @@ hitter_level <- hitter_projections %>%
 hitter_projections <- merge(x = hitter_projections, y = hitter_level, by = "playerid", all.x = TRUE)
 
 #delete any "DH" positions where someone is eligible for another position.
-hitter_projections <- filter(hitter_projections, position != "dh" | times_appears == 1)
+hitter_projections <- filter(hitter_projections, 
+                             position != "dh" | times_appears == 1, 
+                             dollar_value = max_points)
 
 #Sort by dollar value in descending order
 hitter_projections <- hitter_projections[order(-hitter_projections$marginal_total_points),]
@@ -142,6 +144,7 @@ hitter_projections <- hitter_projections[order(-hitter_projections$marginal_tota
 hitter_projections <- filter(hitter_projections, dollar_value >= -5)
 
 #keep only relevant columns
-hitter_projections <- select(hitter_projections, Name, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
+hitter_projections <- select(hitter_projections, Name, position, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
 
+#output to a csv
 write.csv(hitter_projections, file = "hitter_projections.csv")
