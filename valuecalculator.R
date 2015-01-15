@@ -111,8 +111,9 @@ for (position in projection_dfs) {
       remove(temp)
 }
 
-#merge hitter data together
+#merge projections for different positions together.
 for (position in projection_dfs) {
+      
       if (!exists("hitter_projections")) {
             hitter_projections <- get(position)
       }
@@ -123,17 +124,24 @@ for (position in projection_dfs) {
 
 }
 
-count(hitter_projections)
+#get how many times a player appears in projection list, what the strongest position is.
+hitter_level <- hitter_projections %>%
+       group_by(playerid) %>%
+       summarise(times_appears = n(), max_points = max(dollar_value))
+
+#Merge in numbers calculated above
+hitter_projections <- merge(x = hitter_projections, y = hitter_level, by = "playerid", all.x = TRUE)
+
+#delete any "DH" positions where someone is eligible for another position.
+hitter_projections <- filter(hitter_projections, position != "dh" | times_appears == 1)
+
+#Sort by dollar value in descending order
 hitter_projections <- hitter_projections[order(-hitter_projections$marginal_total_points),]
 
-hitter_projections[1:50,c(1:2, 25,27)]
-
-# hitter_level <- hitter_projections %>%
-#       group_by(playerid) %>%
-#       summarise()
-
-
-hitter_projections <- hitter_projections[,c(1:9,25:27)]
-
+#drop any players worth less than $5
 hitter_projections <- filter(hitter_projections, dollar_value >= -5)
+
+#keep only relevant columns
+hitter_projections <- select(hitter_projections, Name, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
+
 write.csv(hitter_projections, file = "hitter_projections.csv")
