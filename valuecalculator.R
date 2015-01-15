@@ -134,8 +134,11 @@ hitter_projections <- merge(x = hitter_projections, y = hitter_level, by = "play
 
 #delete any "DH" positions where someone is eligible for another position.
 hitter_projections <- filter(hitter_projections, 
-                             position != "dh" | times_appears == 1, 
-                             dollar_value = max_points)
+                             position != "dh" | times_appears == 1)
+
+#keep only a player's strongest position
+hitter_projections <- filter(hitter_projections,
+                             dollar_value == max_points)
 
 #Sort by dollar value in descending order
 hitter_projections <- hitter_projections[order(-hitter_projections$marginal_total_points),]
