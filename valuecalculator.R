@@ -2,6 +2,7 @@
 #set up file
 setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
 library(dplyr)
+library(plyr)
 
 
 ################################################################
@@ -234,4 +235,13 @@ pitcher_projections <- filter(pitcher_projections,dollar_value >= -5)
 pitcher_projections[,10:11] <- round(pitcher_projections[,10:11],2)
 
 #write out to a csv
-write.csv(pitcher_projections,file = "pitcher_projections.csv")
+write.csv(pitcher_projections, file = "pitcher_projections.csv")
+
+################################################################
+#################LEAGUE STUFF LIVES HERE########################
+################################################################
+
+#Merge hitter and pitcher projections
+player_projections <- rbind.fill(hitter_projections, pitcher_projections)
+
+write.csv(player_projections, file = "player_projections.csv")
