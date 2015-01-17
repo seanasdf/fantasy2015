@@ -1,6 +1,13 @@
-setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
 
+#set up file
+setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
 library(dplyr)
+
+
+################################################################
+################HITTER STUFF LIVES HERE#########################
+################################################################
+
 
 #Create string of hitter positions.
 hitter_positions <- c("catcher",
@@ -101,7 +108,7 @@ for (position in projection_dfs) {
                                     temp$marginal_avg_points
       
       temp$adjusted_points <- temp$marginal_total_points - 2.2
-      temp$dollar_value <- (temp$adjusted_points/893.5)*2925+1
+      temp$dollar_value <- (temp$adjusted_points/893.5)*2925+2
       
       
       temp <- temp[order(-temp$marginal_total_points),]
@@ -155,3 +162,76 @@ hitter_projections$dollar_value <- round(hitter_projections$dollar_value, digits
 
 #output to a csv
 write.csv(hitter_projections, file = "hitter_projections.csv")
+
+################################################################
+################PITCHER STUFF LIVES HERE########################
+################################################################
+
+#read in projections
+pitcher_projections <- read.csv("pitchers.csv", stringsAsFactors=FALSE)
+
+#keep only relevant columns
+pitcher_projections <- pitcher_projections[,c(1:2,4,7,8,12,14,20)]
+
+#rename columns
+names(pitcher_projections)[1] <- "Name"
+names(pitcher_projections)[6] <- "K"
+
+#reorder columns
+pitcher_projections <- pitcher_projections[c("Name","playerid","IP","ERA","WHIP","W","SV","K")]
+
+#create replacement pitcher values
+replacement_pitcher <- c(4.47,1.4,4,1,102)
+names(replacement_pitcher) <- c("ERA","WHIP","W","SV","K")
+
+#calcualte marginal stats
+for (stat in names(replacement_pitcher)) {
+      pitcher_projections[paste("marginal_",stat,sep="")] <- pitcher_projections[stat]-replacement_pitcher[stat]
+}
+
+#calculate marginal points for each category
+
+#marginal era points
+pitcher_projections$marginal_era_points <-      (pitcher_projections$marginal_ERA*-12.4)*
+                                                (pitcher_projections$IP/1464)
+
+#marginal whip points
+pitcher_projections$marginal_whip_points <-     (pitcher_projections$marginal_WHIP*-75)*
+                                                (pitcher_projections$IP/1464)
+
+#marginal win points
+pitcher_projections$marginal_win_points <-  pitcher_projections$marginal_W*.25
+
+#marginal save points
+pitcher_projections$marginal_save_points <- pitcher_projections$marginal_SV*.14
+
+#marginal strikeout points
+pitcher_projections$marginal_strikeout_points <- pitcher_projections$marginal_K*.02
+
+#calculate total marginal points
+pitcher_projections$total_marginal_points <-    pitcher_projections$marginal_era_points +
+                                                pitcher_projections$marginal_whip_points +
+                                                pitcher_projections$marginal_win_points +
+                                                pitcher_projections$marginal_save_points +
+                                                pitcher_projections$marginal_strikeout_points             
+
+#calculate adjusted points
+pitcher_projections$adjusted_points <- pitcher_projections$total_marginal_points - 1.61
+
+#calculate dollar value
+pitcher_projections$dollar_value <- (pitcher_projections$adjusted_points/664.4132)*1872
+
+#sort by dollar value
+pitcher_projections <- pitcher_projections[order(-pitcher_projections$dollar_value),]
+
+#drop superfluous variables
+pitcher_projections <- pitcher_projections[c("Name","playerid","IP","ERA","WHIP","SV","W","SV","K","adjusted_points","dollar_value")]
+
+#drop players worth less than -$5
+pitcher_projections <- filter(pitcher_projections,dollar_value >= -5)
+
+#round dollars and adjusted_points
+pitcher_projections[,10:11] <- round(pitcher_projections[,10:11],2)
+
+#write out to a csv
+write.csv(pitcher_projections,file = "pitcher_projections.csv")
