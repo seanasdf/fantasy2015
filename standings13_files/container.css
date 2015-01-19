@@ -1,0 +1,49 @@
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.2
+*/
+.yui-overlay,.yui-panel-container{ visibility:hidden;position:absolute;z-index:2;}
+.yui-panel-container form{margin:0;}
+.mask{z-index:1;display:none;position:absolute;top:0;left:0;right:0;bottom:0;}
+.mask.block-scrollbars{overflow:auto;}
+.masked select,.drag select,.hide-select select{_visibility:hidden;}
+.yui-panel-container select{_visibility:inherit;}
+.hide-scrollbars,.hide-scrollbars *{overflow:hidden;}
+.hide-scrollbars select{display:none;}
+.show-scrollbars{overflow:auto;}
+.yui-panel-container.show-scrollbars,.yui-tt.show-scrollbars{overflow:visible;}
+.yui-panel-container.show-scrollbars .underlay,.yui-tt.show-scrollbars .yui-tt-shadow{overflow:auto;}
+.yui-panel-container.shadow .underlay.yui-force-redraw{padding-bottom:1px;}
+.yui-effect-fade .underlay{display:none;}
+.yui-tt-shadow{position:absolute;}
+.yui-skin-spln-notes .yui-panel{position:relative;*zoom:1;left:0;top:0;border-style:solid;border-width:1px; border-color:#989898;z-index:1; background-color: #FAF984; }
+.yui-skin-spln-notes .yui-panel .hd { padding:0; border:none; background-color:#FAF984; color:#000; padding:3px; z-index:100; font-family: "proxima-nova", arial, helvetica, sans-serif; }
+.yui-skin-spln-notes .yui-panel .hd .grey{ color:#8B888A; font-size:10px; font-weight:normal; }
+.yui-skin-spln-notes .yui-panel .bd { overflow:hidden; border:none; margin:0px; }
+.yui-skin-spln-notes .yui-panel table.msgTable { padding-left: 3px; }
+.yui-skin-spln-notes .yui-panel table.msgTable td { font:11px verdana,arial,times; }
+.yui-skin-spln-notes .yui-panel .feedback { padding-left: 5px; }
+.yui-skin-spln-notes .yui-panel .bd form select.selectUser{ wordWrap:break-word; outline:none;}
+.yui-skin-spln-notes .yui-panel .bd form input.btnSubmit{ font-size:11px; }
+.yui-skin-spln-notes .yui-panel .ft { font-size:75%; color:#666; padding:2px; overflow:hidden; border-top:none; background-color:#FAF984; }
+.yui-skin-spln-notes .yui-panel .ft .br{ position:absolute; bottom:20px; right:3px; width:15px; height:15px; }
+.yui-skin-spln-notes .yui-panel .ft table td { cursor: pointer; }
+.yui-skin-spln-notes .yui-panel div#panelContent{ padding:3px; wordWrap:break-word; }
+.yui-skin-spln-notes .yui-panel div#panelContent, .yui-panel div#panelContent *{ font:10px verdana,arial,times; }
+.yui-skin-spln-notes .yui-panel div#formData select.selectUser, div#formData select.selectUser option, div#formData input.btnSubmit, div#formData textarea.txt_msg{ font:normal 11px arial,verdana,times; }
+.yui-skin-spln-notes .yui-panel div#formUnblock input, div#formUnblock select, div#formUnblock option{ font:normal 11px arial,verdana,times; }
+.yui-skin-spln-notes .yui-panel div.formAlt{ padding:10px; font-weight:bold; }
+.yui-skin-spln-notes .yui-panel div.formAlt a{ cursor: pointer; }
+.yui-skin-spln-notes .yui-panel div#formUnblock{ padding:10px; font-weight:bold; }
+.yui-skin-spln-notes .yui-panel select.selectUser{ width:190px; }
+.yui-skin-spln-notes .yui-panel textarea.txt_msg{ width:190px; height:70px; margin:5px 0px; overflow:auto; }
+.yui-skin-spln-notes .yui-panel .replyMsgTxt{ font:italic 10px arial,verdana,times; }
+.yui-skin-spln-notes .yui-panel .sentMsg{ font:bold 11px arial,verdana,times; color:red; text-align:center; display:none; }
+.yui-skin-spln-notes .yui-panel .grey{ color:#8B888A; font-size:10px; font-weight:normal; }
+.yui-skin-spln-notes .yui-panel .container-close { position:absolute; top:3px; right:3px; height:11px; width:10px; margin:0px; padding:0px; background:url(http://images.sportsline.com/images/hp_close.gif) no-repeat; cursor:pointer; visibility:inherit; }
+.yui-skin-spln-notes .yui-panel-container .underlay{right:-1px;left:-1px;}
+.yui-skin-spln-notes .yui-panel-container.matte{padding:9px 10px;background-color:#fff;}
+.yui-skin-spln-notes .yui-panel-container.shadow{_padding:2px 5px 0 3px;}
+.yui-skin-spln-notes .yui-panel-container.shadow .underlay{position:absolute;top:2px;right:-3px;bottom:-3px;left:-3px;*top:3px;*left:-1px;*right:-1px;*bottom:-1px;_top:0;_right:0;_bottom:0;_left:0;_margin-top:3px;_margin-left:-1px;background-color:#000;opacity:.12;*filter:alpha(opacity=12);}

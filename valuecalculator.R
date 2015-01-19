@@ -1,11 +1,8 @@
-
 #set up file
 setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
 library(dplyr)
-library(plyr)
 
-
-################################################################
+###############################################################
 ################HITTER STUFF LIVES HERE#########################
 ################################################################
 
@@ -18,34 +15,34 @@ hitter_positions <- c("catcher",
                       "third_base",
                       "outfield",
                       "dh"
-                  )
+)
 
 #Import and clean data on replacement levels
-      
-      #read in league wide csv
-      replacement_hitters <- read.csv("replacement_hitters.csv")
-      
-      #convert factor variable to a string
-      replacement_hitters[,1] <- toString(replacement_hitters[,1])
-      
-      #rename position values
-      replacement_hitters[1,1] <- "catcher" 
-      replacement_hitters[2,1] <- "first_base" 
-      replacement_hitters[3,1] <- "second_base" 
-      replacement_hitters[4,1] <- "shortstop" 
-      replacement_hitters[5,1] <- "third_base" 
-      replacement_hitters[6,1] <- "middle_infield" 
-      replacement_hitters[7,1] <- "corner_infield"       
-      replacement_hitters[8,1] <- "outfield" 
-      replacement_hitters[9,1] <- "dh" 
-      
-      #rename columns
-      names(replacement_hitters) <- c("position",
-                                      "replacement_runs",
-                                      "replacement_HR",
-                                      "replacement_RBI",
-                                      "replacement_SB",
-                                      "replacement_AVG")
+
+#read in league wide csv
+replacement_hitters <- read.csv("replacement_hitters.csv")
+
+#convert factor variable to a string
+replacement_hitters[,1] <- toString(replacement_hitters[,1])
+
+#rename position values
+replacement_hitters[1,1] <- "catcher" 
+replacement_hitters[2,1] <- "first_base" 
+replacement_hitters[3,1] <- "second_base" 
+replacement_hitters[4,1] <- "shortstop" 
+replacement_hitters[5,1] <- "third_base" 
+replacement_hitters[6,1] <- "middle_infield" 
+replacement_hitters[7,1] <- "corner_infield"       
+replacement_hitters[8,1] <- "outfield" 
+replacement_hitters[9,1] <- "dh" 
+
+#rename columns
+names(replacement_hitters) <- c("position",
+                                "replacement_runs",
+                                "replacement_HR",
+                                "replacement_RBI",
+                                "replacement_SB",
+                                "replacement_AVG")
 
 #create separate data frame for each position
 for (i in hitter_positions) {
@@ -103,10 +100,10 @@ for (position in projection_dfs) {
       temp$marginal_sb_points <- temp$marginal_runs * 0.143642896
       temp$marginal_avg_points <- temp$marginal_avg * 43.82487061      
       temp$marginal_total_points <- temp$marginal_runs_points +
-                                    temp$marginal_hr_points +
-                                    temp$marginal_rbi_points +
-                                    temp$marginal_sb_points +
-                                    temp$marginal_avg_points
+            temp$marginal_hr_points +
+            temp$marginal_rbi_points +
+            temp$marginal_sb_points +
+            temp$marginal_avg_points
       
       temp$adjusted_points <- temp$marginal_total_points - 2.2
       temp$dollar_value <- (temp$adjusted_points/893.5)*2925+2
@@ -129,13 +126,13 @@ for (position in projection_dfs) {
       else {
             hitter_projections <- rbind(hitter_projections, get(position))
       }
-
+      
 }
 
 #get how many times a player appears in projection list, what the strongest position is.
 hitter_level <- hitter_projections %>%
-       group_by(playerid) %>%
-       summarise(times_appears = n(), max_points = max(dollar_value))
+      group_by(playerid) %>%
+      summarise(times_appears = n(), max_points = max(dollar_value))
 
 #Merge in numbers calculated above
 hitter_projections <- merge(x = hitter_projections, y = hitter_level, by = "playerid", all.x = TRUE)
@@ -151,9 +148,6 @@ hitter_projections <- filter(hitter_projections,
 #Sort by dollar value in descending order
 hitter_projections <- hitter_projections[order(-hitter_projections$marginal_total_points),]
 
-#drop any players worth less than $5
-hitter_projections <- filter(hitter_projections, dollar_value >= -5)
-
 #keep only relevant columns
 hitter_projections <- select(hitter_projections, Name, position, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
 
@@ -161,8 +155,6 @@ hitter_projections <- select(hitter_projections, Name, position, R, HR, RBI, SB,
 hitter_projections$adjusted_points <- round(hitter_projections$adjusted_points, digits = 2)
 hitter_projections$dollar_value <- round(hitter_projections$dollar_value, digits = 2)
 
-#output to a csv
-write.csv(hitter_projections, file = "hitter_projections.csv")
 
 ################################################################
 ################PITCHER STUFF LIVES HERE########################
@@ -173,13 +165,14 @@ pitcher_projections <- read.csv("pitchers.csv", stringsAsFactors=FALSE)
 
 #keep only relevant columns
 pitcher_projections <- pitcher_projections[,c(1:2,4,7,8,12,14,20)]
+pitcher_projections$position <- "pitcher"
 
 #rename columns
 names(pitcher_projections)[1] <- "Name"
 names(pitcher_projections)[6] <- "K"
 
 #reorder columns
-pitcher_projections <- pitcher_projections[c("Name","playerid","IP","ERA","WHIP","W","SV","K")]
+pitcher_projections <- pitcher_projections[c("Name","position","playerid","IP","ERA","WHIP","W","SV","K")]
 
 #create replacement pitcher values
 replacement_pitcher <- c(4.47,1.4,4,1,102)
@@ -194,11 +187,11 @@ for (stat in names(replacement_pitcher)) {
 
 #marginal era points
 pitcher_projections$marginal_era_points <-      (pitcher_projections$marginal_ERA*-12.4)*
-                                                (pitcher_projections$IP/1464)
+      (pitcher_projections$IP/1464)
 
 #marginal whip points
 pitcher_projections$marginal_whip_points <-     (pitcher_projections$marginal_WHIP*-75)*
-                                                (pitcher_projections$IP/1464)
+      (pitcher_projections$IP/1464)
 
 #marginal win points
 pitcher_projections$marginal_win_points <-  pitcher_projections$marginal_W*.25
@@ -211,10 +204,10 @@ pitcher_projections$marginal_strikeout_points <- pitcher_projections$marginal_K*
 
 #calculate total marginal points
 pitcher_projections$total_marginal_points <-    pitcher_projections$marginal_era_points +
-                                                pitcher_projections$marginal_whip_points +
-                                                pitcher_projections$marginal_win_points +
-                                                pitcher_projections$marginal_save_points +
-                                                pitcher_projections$marginal_strikeout_points             
+      pitcher_projections$marginal_whip_points +
+      pitcher_projections$marginal_win_points +
+      pitcher_projections$marginal_save_points +
+      pitcher_projections$marginal_strikeout_points             
 
 #calculate adjusted points
 pitcher_projections$adjusted_points <- pitcher_projections$total_marginal_points - 1.61
@@ -226,22 +219,10 @@ pitcher_projections$dollar_value <- (pitcher_projections$adjusted_points/664.413
 pitcher_projections <- pitcher_projections[order(-pitcher_projections$dollar_value),]
 
 #drop superfluous variables
-pitcher_projections <- pitcher_projections[c("Name","playerid","IP","ERA","WHIP","SV","W","SV","K","adjusted_points","dollar_value")]
+pitcher_projections <- pitcher_projections[c("Name","position","playerid","IP","ERA","WHIP","SV","W","K","adjusted_points","dollar_value")]
 
-#drop players worth less than -$5
-pitcher_projections <- filter(pitcher_projections,dollar_value >= -5)
 
 #round dollars and adjusted_points
 pitcher_projections[,10:11] <- round(pitcher_projections[,10:11],2)
 
-#write out to a csv
-write.csv(pitcher_projections, file = "pitcher_projections.csv")
 
-################################################################
-#################LEAGUE STUFF LIVES HERE########################
-################################################################
-
-#Merge hitter and pitcher projections
-player_projections <- rbind.fill(hitter_projections, pitcher_projections)
-
-write.csv(player_projections, file = "player_projections.csv")

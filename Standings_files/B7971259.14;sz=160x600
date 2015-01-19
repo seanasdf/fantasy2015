@@ -1,0 +1,243 @@
+
+(function() {
+  var DEBUG = ''.toLowerCase() == 'true';
+  var csiStart = (+new Date);
+  var studioObjects = window['studioV2'] = window['studioV2'] || {};
+  var eventTags = {"img_event_tag":[],"js_event_tag":["https://c.betrad.com/surly.js#;ad_wxh=160x600;coid=971;nid=12658;ecaid=7971259:;"]};
+  var publisherSideFilePath = unescape('');
+  if(publisherSideFilePath == '') {
+    publisherSideFilePath = '/doubleclick/DARTIframe.html';
+  } else if (publisherSideFilePath.charAt(publisherSideFilePath.length - 1) == '/') {
+    publisherSideFilePath += 'DARTIframe.html';
+  }
+  var bookingTimeMetaData = {
+  };
+
+  var runtimeMetaData = {
+  };
+
+  var exitUrlPatternMacroValues = {
+  };
+  var macroParser = function (macroName, value) {
+    return (value.indexOf(macroName) < 0) ? value : '';
+  };
+  var adServerData = {
+    eventReportingUrl: 'https://ad.doubleclick.net/activity;src=3876773;met=1;v=1;pid=105431820;aid=283606080;ko=0;cid=58897585;rid=58786659;rv=2;',
+    clickUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMiZtQe4aSIF6MkNDhL8OUmez6bbHOIOSyyCneteO-8wUL0ylLZ2Rd16vQ9oWJm5U7lXR69k4Fg3hNQ4BGkstJX7LpPqQreMh7oSaBqRHcPxQVnE-w0RVwzOTJ1hVslDcPwzgnzEA&sig=Cg0ArKJSzIhBmaqCvbPTEAE&adurl=http://r1.ace.advertising.com/click/site%3D894616/mnum%3D1649617/cstr%3D26921019%3D_543b1ff4_0016487330_894617*1649617*1183*0_1_/xsxdata%3D%24xsxdata/bnum%3D26921019/optn%3D64%3Ftrg%3D',
+    clickUrlTimesToEscape: '',
+    clickEventTagUrl: eventTags['click_event_tag'],
+    impressionUrl: 'https://googleads4.g.doubleclick.net/pagead/adview?ai=B_Rbm9h87VIuuHcekpgOPv4HoCgAAAAAQASAAOABQgdqD7Pv_____AVix6YocYMm24ImUpJgTggEJY2EtZ29vZ2xlsgEPd3d3LmZhbnRyYXguY29tyAEJqAMB4AQCmgUZCKLhUxCMhqMyGMD4nYcBILHpihwogMTvAdoFAggBoAY_&sigh=7lHKTaGne_4&adurl=',
+    geoData: 'ct=US&st=MN&city=13487&dma=96&zp=55407&bw=3',
+    siteName: 'N8334.272756.AOL-ADVERTISING',
+    siteId: '1372322',
+    adId: '283606080',
+    exitSuffix: macroParser('exit_suffix', ''), // XFA GA Beacon.
+    buyId: '7971259',
+    creativeId: '58897585',
+    placementId: '105431820',
+    advertiserId: '3876773',
+    keyValueOrdinal: '0',
+    renderingVersion: '2',
+    renderingId: '58786659',
+    randomNumber: '1894776898',
+    dynamicData: '{\"BuickCTA\":[{\"Messaging_Execution\":\"Quiet, Safety, Technology\",\"_index\":0,\"backup\":false,\"copycolor\":\"#ffffff\",\"copyrollcolor\":\"#545454\",\"cta1\":\"VIEW PHOTOS\",\"cta1_160x600X\":18,\"cta1_160x600Y\":457,\"cta1_300x250X\":8,\"cta1_300x250Y\":218,\"cta1_728x90X\":611,\"cta1_728x90Y\":12,\"cta1url\":{\"Url\":\"http://www.buick.com/verano-luxury-sedan/photos.html?cmp=OLA_DISPLAY_7971259_105431820_283606080_58897585\"},\"cta1urlx\":{\"Url\":\"http://www.buick.com/verano-luxury-small-sedan.html\"},\"cta2\":\"REQUEST A QUOTE\",\"cta2_160x600X\":18,\"cta2_160x600Y\":484,\"cta2_300x250X\":103,\"cta2_300x250Y\":218,\"cta2_728x90X\":611,\"cta2_728x90Y\":36,\"cta2url\":{\"Url\":\"http://www.buick.com/request-quote/?cmp=OLA_DISPLAY_7971259_105431820_283606080_58897585\"},\"cta2urlx\":{\"Url\":\"https://www.buick.com/request-quote.html\"},\"cta3\":\"BUILD AND PRICE \",\"cta3_160x600X\":18,\"cta3_160x600Y\":511,\"cta3_300x250X\":200,\"cta3_300x250Y\":218,\"cta3_728x90X\":611,\"cta3_728x90Y\":60,\"cta3url\":{\"Url\":\"http://www.buick.com/verano-luxury-sedan/build-your-own.html?cmp=OLA_DISPLAY_7971259_105431820_283606080_58897585\"},\"cta3urlx\":{\"Url\":\"http://www.buick.com/verano-luxury-small-sedan/build-your-own.html\"},\"ctacolor\":\"#ef6a01\",\"ctaid\":\"2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_\",\"ctarollcolor\":\"#cecfd1\",\"title\":\"2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_\"}],\"BuickOffer\":[{\"Messaging_Execution\":\"Quiet, Safety, Technology\",\"_index\":1,\"backup\":false,\"carmodelcopy\":\"2015 VERANO\",\"carmodelcopycolor\":\"#ffffff\",\"creativeid\":[58897585,58897393,58897697],\"discpreview\":\"*Important Info \",\"discpreviewcolor160x600\":\"#000000\",\"discpreviewcolor300x250\":\"#ffffff\",\"discpreviewcolor728x90\":\"#000000\",\"logo\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/32416511/26624_20140704082939950_logo.png\"},\"mainurl\":{\"Url\":\"http://www.buick.com/verano-luxury-sedan.html?cmp=OLA_DISPLAY_7971259_105431820_283606080_58897585\"},\"mainurlx\":{\"Url\":\"http://www.buick.com/verano-luxury-small-sedan.html\"},\"offerid\":\"2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_\",\"title\":\"2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_\"}],\"BuickSlideShow\":[{\"Messaging_Execution\":\"Quiet, Safety, Technology\",\"_index\":2,\"backup\":false,\"creativeid\":[58897585,58897393,58897697],\"disccolor\":\"#ffffff\",\"image1disc\":\"*Always use safety belts and child restraints. Children are safer when properly secured in a rear seat in the appropriate child restraint. See the Owner\'s Manual for more information.\",\"image2disc\":\"\",\"image3disc\":\"\",\"image_url_1_160x600\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/33585353/26624_20140905082006963_2015_Verano_IMD-ROTATOR_v1_ENG_160x600_Image1.jpg\"},\"image_url_1_300x250\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/32713151/26624_20140724125026245_2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_300x250_image1.jpg\"},\"image_url_1_728x90\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/33586916/26624_20140905082013288_2015_Verano_IMD-ROTATOR_v1_ENG_728x90_Image1.jpg\"},\"image_url_2_160x600\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/33587518/26624_20140905082005587_2015_Verano_IMD-ROTATOR_v1_ENG_160x600_Image2.jpg\"},\"image_url_2_300x250\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/32713578/26624_20140724125020558_2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_300x250_image2.jpg\"},\"image_url_2_728x90\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/33570372/26624_20140905082012103_2015_Verano_IMD-ROTATOR_v1_ENG_728x90_Image2.jpg\"},\"image_url_3_160x600\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/33587419/26624_20140905082003593_2015_Verano_IMD-ROTATOR_v1_ENG_160x600_Image3.jpg\"},\"image_url_3_300x250\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/32713247/26624_20140724125023661_2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_300x250_image3.jpg\"},\"image_url_3_728x90\":{\"Type\":\"file\",\"Url\":\"https://s0.2mdn.net/ads/richmedia/studio/33570371/26624_20140905082008237_2015_Verano_IMD-ROTATOR_v1_ENG_728x90_Image3.jpg\"},\"slideshowid\":\"2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_\",\"title\":\"2015_Verano_IMD_Rotator_Dynamic_US_ENG_v1_\"}],\"_profileid\":1010506}',
+    stringReportingUrl: 'https://ad.doubleclick.net/activity;src=3876773;stragg=1;v=1;pid=105431820;aid=283606080;ko=0;cid=58897585;rid=58786659;rv=2;rn=1894776898;',
+    urlToGetKeywordsFor: '%LivePreviewSiteUrl',
+    bookingTimeMetaData: bookingTimeMetaData,
+    generatedAdSlot: false,
+    exitUrlPatternMacroValues: exitUrlPatternMacroValues,
+    activeViewClkStr: macroParser('eav', 'BACAI9h87VIuuHcekpgOPv4HoCgAAAAAQATgByAEJ4AQCoAY_'),
+    renderingEnvironment: ('' == '1' ||
+        window['mraid']) ? 'IN_APP' : 'BROWSER',
+    placementDimensions: {
+      'w': '160',
+      'h': '600'
+    },
+    tag: {
+      adContainerElementId: macroParser('ad_container_id', ''),
+      hideObjects: '',
+      top: '',
+      left: '',
+      zIndex: '',
+      duration: '',
+      wmode: '',
+      preferHtml5Artwork: '' == 'true',
+      adSenseKeywords: '',
+      adSenseLatitude: '',
+      adSenseLongitude: '',
+      publisherSideFilePath: publisherSideFilePath,
+      runtimeMetaData: runtimeMetaData,
+      lidarEnabled: false,
+      expansionMode: '',
+      renderFloatInplace: ''.toLowerCase() == 'true',
+      tryToWriteHtmlInline: ''.toLowerCase() == 'true'
+    }
+  };
+
+  var staticResourceMediaServer = location.protocol == 'https:' ?
+       'https://s0.2mdn.net' :
+       'http://s0.2mdn.net';
+
+  var creativeMediaServer = location.protocol == 'https:' ?
+       'https://s0.2mdn.net' :
+       'http://s0.2mdn.net';
+
+  var backupImageUrl = '/3876773/7-_2015_Verano_IMD_backupJPG_Static_US_ENG_v1_160x600.jpg';
+  if (!/^https?:/.test(backupImageUrl)) {
+    backupImageUrl = creativeMediaServer + backupImageUrl;
+  }
+  var backupImage = {
+    exitUrl: 'https://ad.doubleclick.net/activity;src=3876773;met=1;v=1;pid=105431820;aid=283606080;ko=0;cid=58897585;rid=58786659;rv=2;cs=u;eid1=1751168;ecn1=1;etm1=0;_dc_redir=url?https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMiZtQe4aSIF6MkNDhL8OUmez6bbHOIOSyyCneteO-8wUL0ylLZ2Rd16vQ9oWJm5U7lXR69k4Fg3hNQ4BGkstJX7LpPqQreMh7oSaBqRHcPxQVnE-w0RVwzOTJ1hVslDcPwzgnzEA&sig=Cg0ArKJSzIhBmaqCvbPTEAE&adurl=http://r1.ace.advertising.com/click/site%3D894616/mnum%3D1649617/cstr%3D26921019%3D_543b1ff4_0016487330_894617*1649617*1183*0_1_/xsxdata%3D%24xsxdata/bnum%3D26921019/optn%3D64%3Ftrg%3Dhttp://www.buick.com/verano-luxury-sedan.html?cmp\x3dOLA_DISPLAY_7971259_105431820_283606080_58897585',
+    target: '_blank',
+    imageUrl: backupImageUrl,
+    width: '160',
+    height: '600',
+    backupDisplayActivityUrl: [
+      adServerData.eventReportingUrl,
+      '&timestamp=', (+new Date), ';',
+      'eid1=9;ecn1=1;etm1=0;'].join(''),
+    thirdPartyBackupImpressionUrl: ''
+  };
+
+  var versionPrefix = DEBUG ? 'db_' : '';
+  var templateVersion = '200_55';
+  var renderingScriptPath = '/879366';
+  var rendererDisplayType = '';
+  rendererDisplayType += 'flash_';
+  var rendererFormat = 'inpage';
+  var rendererName = rendererDisplayType + rendererFormat;
+  var renderingLibrary = renderingScriptPath + '/' + rendererName + '_rendering_lib_' +
+      versionPrefix + templateVersion + '.js';
+  // Adserver has a logic to detect media files and prepend host name.
+  if (!/^https?:/.test(renderingLibrary)) {
+    renderingLibrary = staticResourceMediaServer + renderingLibrary;
+  }
+
+  var adCreativeDefinitions = {};
+    adCreativeDefinitions['283606080'] = '/ads/richmedia/studio/creative/24031074/31363553_d7062f3aceda3478ae87e3dcaa2b00f2_283606080_creative_override.js';
+    adCreativeDefinitions['284342832'] = '/ads/richmedia/studio/creative/24031074/31363553_ab4d73c52ed81809369e0b8fc592af4a_284342832_creative_override.js';
+    adCreativeDefinitions['284422578'] = '/ads/richmedia/studio/creative/24031074/31363553_fde12bba4bcb8bf87bd044bc51f1169b_284422578_creative_override.js';
+    adCreativeDefinitions['284778402'] = '/ads/richmedia/studio/creative/24031074/31363553_a1c8b5f4ecd54751374b6434e5a6d8ea_284778402_creative_override.js';
+    adCreativeDefinitions['280635684'] = '/ads/richmedia/studio/creative/24031074/31363553_bb38682b299613e207720a871c0ff2f3_280635684_creative_override.js';
+
+  var creativeId = '58897585';
+  var adId = adCreativeDefinitions[adServerData.adId] ? adServerData.adId : 0;
+  // The unique creative is identified by combination of creative id and ad id.
+  // When the same creative(same creative id and same ad id) is served on the page more
+  // than once then they will share the creative definition yet there will be
+  // multiple instances of 'adResponses'.s
+  var creativeKey = [creativeId, adId].join('_');
+  var creativeDef = adCreativeDefinitions[adServerData.adId] ?
+      adCreativeDefinitions[adServerData.adId] :
+      '/ads/richmedia/studio/creative/24031074/31363553_90efc573de0dbd6d6a4ca3c32ff8c2da_creative_def.js';
+  if(!/^https?:/.test(creativeDef) && creativeDef.substring(0, 2) != '//') {
+    creativeDef = creativeMediaServer + creativeDef;
+  }
+  studioObjects['creativeCount'] = studioObjects['creativeCount'] || 0;
+  var creativeDto = {
+    id: creativeId,
+    uniqueId: creativeId + '_' + studioObjects['creativeCount']++,
+    templateVersion: templateVersion,
+    adServerData: adServerData,
+    isPreviewEnvironment: '%PreviewMode' == 'true',
+    hasFlashAsset: true,
+    hasHtmlAsset: false,
+    requiresCss3Animations: false,
+    flashVersion: '11.2',
+    httpsMediaServer: 'https://s0.2mdn.net',
+    httpMediaServer: 'http://s0.2mdn.net',
+    renderingScriptPath: renderingScriptPath,
+    renderingLibrary: renderingLibrary,
+    rendererName: rendererName,
+    creativeDefinitionUrl: creativeDef,
+    creativeKey: creativeKey,
+    thirdPartyImpressionUrls: eventTags['img_event_tag'],
+    thirdPartyArtworkImpressionUrl: '',
+    breakoutToTop: false,
+    dimensions: {
+      width: '160px',
+      height: '600px'
+    },
+    backupImage: backupImage,
+    csiStart: csiStart,
+    csiAdRespTime: csiStart - (parseFloat('') || 0),
+    csiEvents: {},
+    hasModernizrFeatureChecks: false,
+    html5FeatureChecks: [
+    ],
+    hasSwiffyHtmlAsset: false
+  };
+
+  var inGdnIframe = window['IN_ADSENSE_IFRAME'] || false;
+  var inYahooSecureIframe = window.Y && Y.SandBox && Y.SandBox.vendor;
+  var inWinLiveIframe = false;
+  try {
+    inWinLiveIframe = !!window.$WLXRmAd;
+  } catch(e) {}
+  var inSafeFrame = window.$sf && window.$sf.ext;
+  var isMsnAjaxIframe = (typeof(inDapMgrIf) != 'undefined' && inDapMgrIf);
+  var breakoutIframe = ''.toLowerCase();
+  var shouldBreakout = (((false ||
+                          false) &&
+                         !inGdnIframe &&
+                         !inYahooSecureIframe &&
+                         !inSafeFrame &&
+                         !inWinLiveIframe) ||
+                        (true && breakoutIframe == 'true')) &&
+                       self != top &&
+                       !creativeDto.isPreviewEnvironment &&
+                       breakoutIframe != 'false';
+
+  if (adServerData.tag.adContainerElementId == '' &&
+      (true || false ||
+         adServerData.tag.renderFloatInplace)) {
+    var containerId = ['creative', creativeDto.uniqueId].join('_');
+    var divHtml = ['<div id="', containerId, '"></div>'].join('');
+    document.write(divHtml);
+    adServerData.tag.adContainerElementId = containerId;
+    adServerData.generatedAdSlot = true;
+  }
+  var creatives = studioObjects['creatives'] = studioObjects['creatives'] || {};
+  var creative = creatives[creativeKey] = creatives[creativeKey] || {};
+  var adResponses = creative['adResponses'] = creative['adResponses'] || [];
+  creative['shouldBreakout'] = creative['shouldBreakout'] || shouldBreakout;
+  var iframeBusterLibrary = renderingScriptPath + '/iframe_buster_' +
+      versionPrefix + templateVersion + '.js';
+  if(!/^https?:/.test(iframeBusterLibrary)) {
+    iframeBusterLibrary = staticResourceMediaServer + iframeBusterLibrary;
+  }
+  var loadedLibraries = studioObjects['loadedLibraries'] = studioObjects['loadedLibraries'] || {};
+  var versionedLibrary = loadedLibraries[templateVersion] = loadedLibraries[templateVersion] || {};
+  var typedLibrary = versionedLibrary[rendererName] = versionedLibrary[rendererName] || {};
+  adResponses.push({
+    creativeDto: creativeDto
+  });
+  for (var i = 0; i < eventTags['js_event_tag'].length; i++) {
+    document.write('<scr' + 'ipt type="text/javascript" src="' + eventTags['js_event_tag'][i] + '"></scr' + 'ipt>');
+  }
+  if (shouldBreakout) {
+    if (versionedLibrary['breakout']) {
+      versionedLibrary['breakout']();
+    } else if (!versionedLibrary['breakoutLoading']) {
+      versionedLibrary['breakoutLoading'] = true;
+      document.write('<scr' + 'ipt type="text/javascript" src="' + iframeBusterLibrary + '" async="async"></scr' + 'ipt>');
+    }
+  } else if (typedLibrary['bootstrap'] && creative['creativeDefinition']) {
+    typedLibrary['bootstrap']();
+  } else {
+    if (!creative['definitionLoading']) {
+      creative['definitionLoading'] = true;
+      creativeDto.csiEvents['pb'] = (+new Date);
+      document.write('<scr' + 'ipt type="text/javascript" src="' + creativeDto.creativeDefinitionUrl + '"' + (adServerData.tag.tryToWriteHtmlInline ? '' : ' async="async"') + '></scr' + 'ipt>');
+    }
+    if (!typedLibrary['loading']) {
+      typedLibrary['loading'] = true;
+      creativeDto.csiEvents['gb'] = (+new Date);
+      document.write('<scr' + 'ipt type="text/javascript" src="' + renderingLibrary + '"' + (adServerData.tag.tryToWriteHtmlInline ? '' : ' async="async"') + '></scr' + 'ipt>');
+    }
+  }
+  if (isMsnAjaxIframe) {
+    window.setTimeout("document.close();", 1000);
+  }
+})();
+document.write('\n\x3cnoscript\x3e\n  \x3ca target\x3d\x22_blank\x22 href\x3d\x22https://ad.doubleclick.net/activity;src\x3d3876773;met\x3d1;v\x3d1;pid\x3d105431820;aid\x3d283606080;ko\x3d0;cid\x3d58897585;rid\x3d58786659;rv\x3d2;cs\x3du;eid1\x3d1751168;ecn1\x3d1;etm1\x3d0;_dc_redir\x3durl?https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjssMiZtQe4aSIF6MkNDhL8OUmez6bbHOIOSyyCneteO-8wUL0ylLZ2Rd16vQ9oWJm5U7lXR69k4Fg3hNQ4BGkstJX7LpPqQreMh7oSaBqRHcPxQVnE-w0RVwzOTJ1hVslDcPwzgnzEA\x26sig\x3dCg0ArKJSzIhBmaqCvbPTEAE\x26adurl\x3dhttp://r1.ace.advertising.com/click/site%3D894616/mnum%3D1649617/cstr%3D26921019%3D_543b1ff4_0016487330_894617*1649617*1183*0_1_/xsxdata%3D%24xsxdata/bnum%3D26921019/optn%3D64%3Ftrg%3Dhttp://www.buick.com/verano-luxury-sedan.html?cmp\x3dOLA_DISPLAY_7971259_105431820_283606080_58897585\x22\x3e\n    \x3cimg border\x3d\x220\x22 alt\x3d\x22\x22 src\x3d\x22//s0.2mdn.net/3876773/7-_2015_Verano_IMD_backupJPG_Static_US_ENG_v1_160x600.jpg\x22\n        width\x3d\x22160\x22 height\x3d\x22600\x22 /\x3e\n  \x3c/a\x3e\n  \x3cimg width\x3d\x220px\x22 height\x3d\x220px\x22 style\x3d\x22visibility:hidden\x22 border\x3d\x220\x22 alt\x3d\x22\x22\n       src\x3d\x22https://ad.doubleclick.net/activity;src\x3d3876773;met\x3d1;v\x3d1;pid\x3d105431820;aid\x3d283606080;ko\x3d0;cid\x3d58897585;rid\x3d58786659;rv\x3d2;\x26timestamp\x3d1894776898;eid1\x3d9;ecn1\x3d1;etm1\x3d0;\x22 /\x3e\n  \n\x3c/noscript\x3e\n');(function(){var f=function(a,c,b){return a.call.apply(a.bind,arguments)},g=function(a,c,b){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var b=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(b,d);return a.apply(c,b)}}return function(){return a.apply(c,arguments)}},k=function(a,c,b){k=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?f:g;return k.apply(null,arguments)};var l=document,m=window;var n=function(a){return{visible:1,hidden:2,prerender:3,preview:4}[a.webkitVisibilityState||a.mozVisibilityState||a.visibilityState||""]||0},p=function(a){var c;a.mozVisibilityState?c="mozvisibilitychange":a.webkitVisibilityState?c="webkitvisibilitychange":a.visibilityState&&(c="visibilitychange");return c};var r=function(){this.g=l;this.j=m;this.i=!1;this.h=[];this.m={};if(3==n(this.g)){var a=k(this.o,this);this.n=a;var c=this.g,b=p(this.g);c.addEventListener?c.addEventListener(b,a,!1):c.attachEvent&&c.attachEvent("on"+b,a)}else q(this)};r.p=function(){return r.l?r.l:r.l=new r};var s=/^([^:]+:\/\/[^/]+)/m,t=/^\d*,(.+)$/m,q=function(a){if(!a.i){a.i=!0;for(var c=0;c<a.h.length;++c)a.k.apply(a,a.h[c]);a.h=[]}};r.prototype.q=function(a,c){var b=c.target.t();(b=t.exec(b))&&(this.m[a]=b[1])};r.prototype.k=function(a,c){var b;if(b=this.s)i:{try{var d=s.exec(this.j.location.href),e=s.exec(a);if(d&&e&&d[1]==e[1]&&c){var h=k(this.q,this,c);this.s(a,h);b=!0;break i}}catch(y){}b=!1}b||(b=this.j,b.google_image_requests||(b.google_image_requests=[]),d=b.document.createElement("img"),d.src=a,b.google_image_requests.push(d))};r.prototype.o=function(){if(3!=n(this.g)){q(this);var a=this.g,c=p(this.g),b=this.n;a.removeEventListener?a.removeEventListener(c,b,!1):a.detachEvent&&a.detachEvent("on"+c,b)}};var u=function(a,c){var b=/(google|doubleclick).*\/pagead\/adview/.test(a),d=r.p(),e=a;if(b){b="&vis="+n(d.g);c&&(b+="&ve=1");var h=e.indexOf("&adurl"),e=-1==h?e+b:e.substring(0,h)+b+e.substring(h)}d.i?d.k(e,c):d.h.push([e,c])},v=["pdib"],w=this;v[0]in w||!w.execScript||w.execScript("var "+v[0]);for(var x;v.length&&(x=v.shift());)v.length||void 0===u?w=w[x]?w[x]:w[x]={}:w[x]=u;})();pdib("https://googleads4.g.doubleclick.net/pagead/adview?ai\x3dB_Rbm9h87VIuuHcekpgOPv4HoCgAAAAAQASAAOABQgdqD7Pv_____AVix6YocYMm24ImUpJgTggEJY2EtZ29vZ2xlsgEPd3d3LmZhbnRyYXguY29tyAEJqAMB4AQCmgUZCKLhUxCMhqMyGMD4nYcBILHpihwogMTvAdoFAggBoAY_\x26sigh\x3d7lHKTaGne_4\x26adurl\x3d");
