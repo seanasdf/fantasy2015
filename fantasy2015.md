@@ -66,3 +66,8 @@ Pitching Points
     ## balco            1        1     1    3.0   1.0           68
     ## virginia        12       12     6   10.5   6.0           66
     ## ottawa           3        3     5    3.0   5.0           52
+
+Scatter of Current Draft
+========================
+
+![](fantasy2015_files/figure-markdown_strict/unnamed-chunk-5-1.png)
