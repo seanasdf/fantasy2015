@@ -67,7 +67,10 @@ Pitching Points
     ## virginia        12       12     6   10.5   6.0           66
     ## ottawa           3        3     5    3.0   5.0           52
 
-Scatter of Current Draft
-========================
+Scatter of Remaining Dollars vs. Current Points
+===============================================
 
-![](fantasy2015_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+    ## pdf 
+    ##   2
+
+![Remaining Dollars vs. Current Points](moneyvspoints.png)
