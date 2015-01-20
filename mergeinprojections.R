@@ -42,17 +42,19 @@ for (team in teams) {
       temp$playerid.y <- NULL
       temp$adjusted_points.y <- NULL
       temp$dollar_value.y <- NULL
-      
-      #name rows by position
-      rownames(temp) <- temp$roster_spot
-      
+
       assign(team, temp)
+      
+      remove(temp)
 }
 
 
 #reorder rows.
 for (team in teams) {
+      
       temp <- get(team)
-      temp <- temp[positions,]
+      
+      temp <- temp[match(positions,temp$roster_spot),c(1:15,18:19)]
+      
       assign(team,temp)
 }

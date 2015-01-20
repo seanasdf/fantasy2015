@@ -1,0 +1,31 @@
+---
+title: "Fantasy Baseball 2015"
+author: "Team Marmaduke"
+date: "Monday, January 19, 2015"
+output: html_document
+---
+
+``` {r echo = FALSE}
+setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
+source("valuecalculator.R")
+source("leaguesetup.R")
+source("draftpicks.R")
+source("mergeinprojections.R")
+source("calculatestandings.R")
+source("csvwriter.R")
+```
+
+#Current Stats
+```{r, echo=FALSE}
+standings[,c(2:11)]
+```
+
+#Hitting Points
+```{r, echo=FALSE}
+standings[,c(12:16,22)]
+```
+
+#Pitching Points
+```{r, echo=FALSE}
+standings[,c(17:22)]
+```

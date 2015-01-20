@@ -82,7 +82,7 @@ for (position in projection_dfs) {
       
       temp$position <- gsub("_projections","",position)
       
-      temp <- temp[c("Name","position","playerid", "PA",
+      temp <- temp[c("Name","position","playerid", "AB",
                      "R","HR","RBI","SB","AVG",
                      "replacement_runs", "replacement_HR", "replacement_RBI", "replacement_SB","replacement_AVG" )]
       
@@ -149,7 +149,7 @@ hitter_projections <- filter(hitter_projections,
 hitter_projections <- hitter_projections[order(-hitter_projections$marginal_total_points),]
 
 #keep only relevant columns
-hitter_projections <- select(hitter_projections, Name, position, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
+hitter_projections <- select(hitter_projections, Name, position, AB, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
 
 #round dollar values and adjusted points
 hitter_projections$adjusted_points <- round(hitter_projections$adjusted_points, digits = 2)
