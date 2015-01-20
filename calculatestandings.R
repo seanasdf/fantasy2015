@@ -18,6 +18,9 @@ for (team in teams) {
       team_SV <- sum(temp$SV, na.rm=TRUE)
       team_W <- sum(temp$W, na.rm=TRUE)
       
+      team_salary <- sum(temp$salary, na.rm=TRUE)
+      salary_remaining <- 260-sum(temp$salary, na.rm=TRUE)
+      
       #merge team's stats in to standings
       standings <- data.frame(
                   team_name = c(standings$team_name, team),
@@ -31,36 +34,43 @@ for (team in teams) {
                   K = c(standings$K, team_K),
                   SV = c(standings$SV, team_SV),
                   W = c(standings$W, team_W),
+                  spent = c(standings$spent, team_salary), 
+                  left = c(standings$left, salary_remaining),
                   stringsAsFactors = FALSE
             )
 }
 
 #calculate points
-standings$R_points <- rank(standings$R)
-standings$HR_points <- rank(standings$HR)
-standings$RBI_points <- rank(standings$RBI)
-standings$SB_points <- rank(standings$SB)
-standings$AVG_points <- rank(standings$AVG)
+standings$R_pts <- rank(standings$R)
+standings$HR_pts <- rank(standings$HR)
+standings$RBI_pts <- rank(standings$RBI)
+standings$SB_pts <- rank(standings$SB)
+standings$AVG_pts <- rank(standings$AVG)
 
-standings$ERA_points <- 19-rank(standings$ERA)
-standings$WHIP_points <- 19-rank(standings$ERA)
-standings$K_points <- rank(standings$K)
-standings$SV_points <- rank(standings$SV)
-standings$W_points <- rank(standings$W)
+standings$ERA_pts <- 19-rank(standings$ERA)
+standings$WHIP_pts <- 19-rank(standings$ERA)
+standings$K_pts <- rank(standings$K)
+standings$SV_pts <- rank(standings$SV)
+standings$W_pts <- rank(standings$W)
 
 
-standings$total_points <-     standings$ERA_points +
-                              standings$WHIP_points + 
-                              standings$K_points +
-                              standings$SV_points +
-                              standings$W_points +
-                              standings$R_points +
-                              standings$HR_points +
-                              standings$RBI_points +      
-                              standings$SB_points +
-                              standings$AVG_points 
+standings$total_points <-     standings$ERA_pts +
+                              standings$WHIP_pts + 
+                              standings$K_pts +
+                              standings$SV_pts +
+                              standings$W_pts +
+                              standings$R_pts +
+                              standings$HR_pts +
+                              standings$RBI_pts +      
+                              standings$SB_pts +
+                              standings$AVG_pts 
+
+standings$total_points <- round(standings$total_points, 0)
+
 #Rownames
 rownames(standings) <- standings$team_name
 
 #Sort by total points
 standings <- standings[order(-standings$total_points),]
+
+

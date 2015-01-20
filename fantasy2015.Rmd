@@ -17,15 +17,16 @@ source("csvwriter.R")
 
 #Current Stats
 ```{r, echo=FALSE}
-standings[,c(2:11)]
+standings[,c(2:13)]
 ```
 
 #Hitting Points
 ```{r, echo=FALSE}
-standings[,c(12:16,22)]
+standings[,c(14:18,24)]
 ```
 
 #Pitching Points
 ```{r, echo=FALSE}
-standings[,c(17:22)]
+standings[,c(19:24)]
 ```
+
