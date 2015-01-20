@@ -2,7 +2,7 @@
 title: "Fantasy Baseball 2015"
 author: "Team Marmaduke"
 date: "Monday, January 19, 2015"
-output: html_document
+output: md_document
 ---
 
 ``` {r echo = FALSE}
