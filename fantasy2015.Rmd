@@ -5,7 +5,7 @@ date: "Monday, January 19, 2015"
 output: md_document
 ---
 
-``` {r echo = FALSE}
+``` {r echo = FALSE, warning=FALSE, error=FALSE, message = FALSE}
 setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
 source("valuecalculator.R")
 source("leaguesetup.R")
