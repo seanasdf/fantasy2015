@@ -48,6 +48,7 @@
       draft("rippe", "Manny Machado", 14, "3B")
       draft("rippe", "Matt Carpenter", 9, "CI")
       draft("rippe", "Byron Buxton", 0, "B")
+      draft("rippe", "David Lough", 2, "OF") 
       
       #pitchers
       draft("rippe", "Sean Doolittle", 4, "P")
@@ -86,6 +87,7 @@
       draft("pasadena", "Arismendy Alcantara", 4, "2B")
       draft("pasadena", "Kris Bryant", 3, "B")
       draft("pasadena", "Addison Russell", 7, "B") 
+      draft("pasadena", "Joey Gallo", 5, "3B") 
       
       #hitters
       draft("pasadena", "Jake Arrieta", 5, "P")
@@ -215,6 +217,7 @@
       draft("pk dodgers", "Carl Crawford", 12,  "OF")
       draft("pk dodgers", "Josh Hamilton", 12,  "OF")
       draft("pk dodgers", "Erisbel Arruebarrena", 0,  "B")
+      draft("pk dodgers", "Derek Norris", 12,  "C")
       
       ##pitchers
       draft("pk dodgers", "Odrisamer Despaigne", 6, "P")
@@ -225,8 +228,9 @@
       draft("pk dodgers", "Despaigne", 6, "P")
       draft("pk dodgers", "Zach Lee", 0, "B")
       draft("pk dodgers", "Clayton Kershaw", 32, "P")
-
-#Brad's Bears
+      draft("pk dodgers", "Brandon McCarthy", 11, "P")
+      
+#Brad's Bears Mayhew
       
       # Hitters
       draft("bears", "Anthony Rizzo", 19, "1B")
@@ -235,7 +239,7 @@
       draft("bears", "Javier Baez", 4, "2B")
       draft("bears", "Pedro Alvarez", 15, "3B")
       draft("bears", "Alcides Escobar", 6, "SS")
-
+      draft("bears", "Joey Votto", 22, "CI")
       #Pitchers
       draft("bears", "Jordan Zimmermann", 22, "P")
       draft("bears", "David Robertson", 18, "P")
@@ -274,6 +278,8 @@
       draft("marmaduke", "Kennys Vargas", 5, "DH")
       draft("marmaduke", "Mark Trumbo", 21, "OF")
       draft("marmaduke", "Nick Markakis", 12, "OF")
+      draft("marmaduke", "Shin-Soo Choo", 23, "OF")
+      draft("marmaduke", "Matt Holliday", 27, "OF")
       
       ##pitchers
       draft("marmaduke", "James Shields", 18, "P")
@@ -310,6 +316,7 @@
       draft("sturgeon", "Stephen Vogt", 6, "1B")
       draft("sturgeon", "David Dahl", 0, "B")
       draft("sturgeon", "Miguel Sano", 0, "B")
+      draft("sturgeon", "Carlos Gonzalez", 29, "OF")
       
       #pitchers
       draft("sturgeon", "Corey Kluber", 10, "P")

@@ -31,7 +31,7 @@ standings[,c(19:24)]
 ```
 
 #Scatter of Remaining Dollars vs. Current Points
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
 library(ggplot2)
 pointsline <- mean(standings$total_points)
 moneyline <- mean(standings$left)
