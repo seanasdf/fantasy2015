@@ -2,7 +2,7 @@
 title: "Fantasy Baseball 2015"
 author: "Team Marmaduke"
 date: "Monday, January 19, 2015"
-output: md_document
+output: html_document
 ---
 
 ``` {r echo = FALSE, warning=FALSE, error=FALSE, message = FALSE}
@@ -44,11 +44,8 @@ moneyvspoints <-    ggplot(data=standings, aes(x=left, y = total_points, label =
             stat_smooth(method=lm, se=FALSE) +
             xlab("Dollars Remaining") +
             ylab("Current Points")
-            
-png(file = "moneyvspoints.png",width = 600, height = 600)
+
 moneyvspoints
-dev.off()
 ```
-![Remaining Dollars vs. Current Points](moneyvspoints.png)
 
 

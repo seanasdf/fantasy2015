@@ -18,7 +18,7 @@
       ##Pitchers
       draft("balco", "Derek Holland", 4, "P")
 
-#Bellevegas
+#Bellevegas baird
       
       #hitters
       draft("bellevegas", "Jose Abreu", 23, "1B")
@@ -36,7 +36,8 @@
       draft("bellevegas", "Jered Weaver", 17, "P")
       draft("bellevegas", "Justin Verlander", 15, "P")
       draft("bellevegas", "Carlos Martinez", 4, "P")
-
+      draft("bellevegas", "Rick Porcello", 10, "P")
+      
 #RIPPE Cates Rhode Island
       
       #hitters
@@ -49,6 +50,7 @@
       draft("rippe", "Matt Carpenter", 9, "CI")
       draft("rippe", "Byron Buxton", 0, "B")
       draft("rippe", "David Lough", 2, "OF") 
+      draft("rippe", "Chase Utley", 13, "MI") 
       
       #pitchers
       draft("rippe", "Sean Doolittle", 4, "P")
@@ -106,7 +108,8 @@
       draft("deano", "Evan Gattis", 9, "C")
       draft("deano", "Clint Frazier", 0, "B")
       draft("deano", "Dustin Pedroia", 19,"2B")       
-      draft("deano", "Freddie Freeman", 28,"CI")       
+      draft("deano", "Freddie Freeman", 28,"CI")
+
       
       ##pitchers
       draft("deano", "Stephen Strasburg", 24, "P")
@@ -217,7 +220,9 @@
       draft("pk dodgers", "Carl Crawford", 12,  "OF")
       draft("pk dodgers", "Josh Hamilton", 12,  "OF")
       draft("pk dodgers", "Erisbel Arruebarrena", 0,  "B")
-      draft("pk dodgers", "Derek Norris", 12,  "C")
+      draft("pk dodgers", "Jimmy Rollins", 15,  "DH")
+      draft("pk dodgers", "Matt Joyce", 11,  "OF")
+      draft("pk dodgers", "Francisco Cervelli", 11,  "C")
       
       ##pitchers
       draft("pk dodgers", "Odrisamer Despaigne", 6, "P")
@@ -229,6 +234,7 @@
       draft("pk dodgers", "Zach Lee", 0, "B")
       draft("pk dodgers", "Clayton Kershaw", 32, "P")
       draft("pk dodgers", "Brandon McCarthy", 11, "P")
+      draft("pk dodgers", "C.J. Wilson", 7, "P")
       
 #Brad's Bears Mayhew
       
@@ -256,6 +262,7 @@
       draft("ottawa", "Daniel Santana", 8, "SS")
       draft("ottawa", "Lorenzo Cain", 5, "OF")
       draft("ottawa", "Hunter Pence", 27, "OF")
+      draft("ottawa", "Khris Davis", 25, "OF")
       
       #pitchers
       draft("ottawa", "Alexander Cobb", 14, "P")
@@ -295,6 +302,8 @@
       draft("isotopes", "Buster Posey", 24, "C")
       draft("isotopes", "Drew Stubbs", 5, "OF")
       draft("isotopes", "Stephen Souza", 15, "OF")
+      draft("isotopes", "Erick Aybar", 11, "MI")
+      
       
       #pitchers
       draft("isotopes", "Koji Uehara", 9, "P")
@@ -317,6 +326,7 @@
       draft("sturgeon", "David Dahl", 0, "B")
       draft("sturgeon", "Miguel Sano", 0, "B")
       draft("sturgeon", "Carlos Gonzalez", 29, "OF")
+      draft("sturgeon", "Albert Pujols", 32, "CI")
       
       #pitchers
       draft("sturgeon", "Corey Kluber", 10, "P")
