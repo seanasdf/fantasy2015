@@ -56,7 +56,8 @@
       draft("rippe", "Sean Doolittle", 4, "P")
       draft("rippe", "Julio Teheran", 11, "P")
       draft("rippe", "Trevor Rosenthal", 9, "P")
-
+      draft("rippe", "Carlos Carrasco", 17, "P")
+      
 #Craig's counsel
       
       #hitters
@@ -65,10 +66,11 @@
       draft("counsel", "Xander Bogaerts", 9, "SS")
       draft("counsel", "Miguel Montero", 17, "C")
       draft("counsel", "Austin Hedges", 4, "C")
-      draft("counsel", "Anthony Rendon", 9, "2B")
-      draft("counsel", "Nick Castellanos", 4, "3B")
       draft("counsel", "Jason Heyward", 26, "OF")
       draft("counsel", "Jacoby Ellsbury", 36, "OF")
+      draft("counsel", "Evan Longoria", 28, "CI")
+      draft("counsel", "Brandon Moss", 28, "1B")
+      
       
       #pitchers
       draft("counsel", "Matt Harvey", 14, "P")
@@ -90,6 +92,7 @@
       draft("pasadena", "Kris Bryant", 3, "B")
       draft("pasadena", "Addison Russell", 7, "B") 
       draft("pasadena", "Joey Gallo", 5, "3B") 
+      draft("pasadena", "Eric Hosmer", 18, "1B") 
       
       #hitters
       draft("pasadena", "Jake Arrieta", 5, "P")
@@ -153,11 +156,13 @@
       draft("dembums", "Michael Pineda", 5, "P")
 
 #D&S factory
+      
       #hitters
       draft("d&s", "Melky Cabrera", 9, "OF")
       draft("d&s", "Brian Dozier", 9, "2B")
       draft("d&s", "J.D. Martinez", 9, "OF")
       draft("d&s", "Jason Werth", 25, "OF")
+      draft("d&s", "Alex Rios", 21, "OF")
       
       #Pitchers
       draft("d&s", "Felix Hernandez", 30, "P")
@@ -170,12 +175,13 @@
       draft("d&s", "Julio Urias", 0, "P")
       draft("d&s", "Kenta Maeda", 0, "P")
 
-#jobu
+#jobu D goddard
       
       #hitters
       draft("jobu", "Austin Jackson", 19, "OF")
       draft("jobu", "Casey McGehee", 4, "3B")
       draft("jobu", "Jose Reyes", 4, "SS")
+      draft("jobu", "Leonys Martin", 18, "OF")
       
       #pitchers
       draft("jobu", "Zach Britton", 4, "P")
@@ -187,7 +193,8 @@
       draft("jobu", "Jeremy Guthrie", 4, "P")
       draft("jobu", "RA Dickey", 10, "P")
       draft("jobu", "Edinson Volquez",7, "P")
-      draft("jobu", "Syndergaard", 0, "P")
+      draft("jobu", "Johnathan Papelbon",20, "P")
+      draft("jobu", "Syndergaard", 0, "B")
 
 #Bay city
       
@@ -271,6 +278,7 @@
       draft("ottawa", "Michael Fiers", 6, "P")
       draft("ottawa", "Matt Shoemaker", 5, "P")
       draft("ottawa", "Shane Greene", 5, "P")
+      draft("ottawa", "Fernando Rodney", 15, "P")
 
 #Team Marmaduke
       
