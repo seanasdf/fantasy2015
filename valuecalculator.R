@@ -48,7 +48,16 @@ names(replacement_hitters) <- c("position",
 for (i in hitter_positions) {
       
       #create temporary data frame based on position
-      temp_data_frame <- data.frame(read.csv(paste(i,".csv",sep=""))[,c(1:3,7:9,13,16:17,29)])
+      temp_data_frame <- data.frame(read.csv(paste(i,".csv",sep=""))[,c("ï..Name",
+                                                                        "PA",
+                                                                        "AB",
+                                                                        "HR",
+                                                                        "R",
+                                                                        "RBI",
+                                                                        "SB",
+                                                                        "AVG",
+                                                                        "OBP",
+                                                                        "playerid")])
       
       #get replacement level projections for each position
       for (column in 11:15) {
@@ -87,11 +96,11 @@ for (position in projection_dfs) {
                      "replacement_runs", "replacement_HR", "replacement_RBI", "replacement_SB","replacement_AVG" )]
       
       #calculate statistics over replacement
-      temp$marginal_runs <- temp[,5] - temp[,10]
-      temp$marginal_hr <- temp[,6] - temp[,11]
-      temp$marginal_rbi <- temp[,7] - temp[,12]
-      temp$marginal_sb <- temp[,8] - temp[,13]
-      temp$marginal_avg <- temp[,9] - temp[,14]
+      temp$marginal_runs <- temp[,"R"] - temp[,"replacement_runs"]
+      temp$marginal_hr <- temp[,"HR"] - temp[,"replacement_HR"]
+      temp$marginal_rbi <- temp[,"RBI"] - temp[,"replacement_RBI"]
+      temp$marginal_sb <- temp[,"SB"] - temp[,"replacement_SB"]
+      temp$marginal_avg <- temp[,"AVG"] - temp[,"replacement_AVG"]
       
       #calculate marginal points in the league
       temp$marginal_runs_points <- temp$marginal_runs * .035181
@@ -149,12 +158,14 @@ hitter_projections <- filter(hitter_projections,
 hitter_projections <- hitter_projections[order(-hitter_projections$marginal_total_points),]
 
 #keep only relevant columns
-hitter_projections <- select(hitter_projections, Name, position, AB, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
+hitter_projections <- select(hitter_projections, Name, position, playerid, AB, R, HR, RBI, SB, AVG, adjusted_points, dollar_value)
 
 #round dollar values and adjusted points
 hitter_projections$adjusted_points <- round(hitter_projections$adjusted_points, digits = 2)
 hitter_projections$dollar_value <- round(hitter_projections$dollar_value, digits = 2)
 
+#delete anyone with less than 2 PAs
+hitter_projections <- hitter_projections[hitter_projections$AB > 1,]
 
 ################################################################
 ################PITCHER STUFF LIVES HERE########################
@@ -224,6 +235,10 @@ pitcher_projections <- pitcher_projections[c("Name","position","playerid","IP","
 
 #round dollars and adjusted_points
 pitcher_projections[,10:11] <- round(pitcher_projections[,10:11],2)
+
+#delete anyone with less than 1 IP
+pitcher_projections <- pitcher_projections[pitcher_projections$IP > 1,]
+
 
 write.csv(pitcher_projections, file = "pitcher_projections.csv")
 write.csv(hitter_projections, file = "hitter_projections.csv")

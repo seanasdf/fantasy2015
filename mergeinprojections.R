@@ -1,51 +1,43 @@
+batter_positions <- c("C1","C2","1B","2B","SS","3B","CI","MI","OF1","OF2","OF3","OF4","OF5","OF6","DH")
+pitcher_positions <- c("P1","P2","P3","P4","P5","P6","P7","P8","P9","P10")
 
-#merge in hitter projections
 for (team in teams) {
-      temp <- merge(get(team), hitter_projections, by = "Name", all.x = TRUE)
-      assign(team, temp)
-      remove(temp)
-}
-
-
-
-#Merge in pitcher projections
-for (team in teams) {
-      temp <- merge(get(team), pitcher_projections, by = "Name", all.x = TRUE)
       
-      assign(team, temp)
-      remove(temp)
-}
-
-#delete duplicate columns and rename everything
-for (team in teams) {
       temp <- get(team)
+            
+      #separate hitters and pitchers
+      hitters <- temp[batter_positions,]
+      pitchers <- temp[pitcher_positions,]
       
-      #replace duplicates for hitters
-      temp$position <- temp$position.x
-      temp$playerid <- temp$playerid.x
-      temp$adjusted_points <- temp$adjusted_points.x
-      temp$dollar_value <- temp$dollar_value.x
+      #merge in projections
+      hitters <- merge(hitters, hitter_projections, by = "Name", all.x = TRUE)
+      pitchers <- merge(pitchers, pitcher_projections, by = "Name", all.x = TRUE)
       
+      #reassign rownames to merged projections
+      rownames(hitters) <- hitters$roster_spot
+      rownames(pitchers) <- pitchers$roster_spot
+            
+      #add columns for stats to team
+      temp[c("playerid","roster_spot", "AB","R","HR","RBI","SB","AVG","IP","ERA","WHIP","SV","W","K")] <- NA
       
-      #replace duplicates for pitchers
-      temp[which(temp$position.y=="pitcher"),"position"] <- temp[which(temp$position.y=="pitcher"),"position.y"]
-      temp[which(temp$position.y=="pitcher"),"playerid"] <- temp[which(temp$position.y=="pitcher"),"playerid.y"]
-      temp[which(temp$position.y=="pitcher"),"adjusted_points"] <- temp[which(temp$position.y=="pitcher"),"adjusted_points.y"]
-      temp[which(temp$position.y=="pitcher"),"dollar_value"] <- temp[which(temp$position.y=="pitcher"),"dollar_value.y"]
+      #add hitter projections to team 
+      for (position in batter_positions) {
+            temp[position, c("playerid","AB","R","HR","RBI","SB","AVG")] <- 
+                  hitters[position, c("playerid","AB","R","HR","RBI","SB","AVG")]
+      }
       
-      #delete duplicate columns
-      temp$position.x <- NULL
-      temp$playerid.x <- NULL
-      temp$adjusted_points.x <- NULL
-      temp$dollar_value.x <- NULL
-      temp$position.y <- NULL
-      temp$playerid.y <- NULL
-      temp$adjusted_points.y <- NULL
-      temp$dollar_value.y <- NULL
-
+      #add pitcher projections to team
+      for (position in pitcher_positions) {
+            temp[position, c("playerid","IP","ERA","WHIP","SV","W","K")] <- 
+                  pitchers[position, c("playerid","IP","ERA","WHIP","SV","W","K")]
+      }
+      
       assign(team, temp)
       
+      remove(hitters)
+      remove(pitchers)
       remove(temp)
+      
 }
 
 
@@ -54,7 +46,7 @@ for (team in teams) {
       
       temp <- get(team)
       
-      temp <- temp[match(positions,temp$roster_spot),c(1:15,18:19)]
+      temp <- temp[positions,]
       
       assign(team,temp)
 }

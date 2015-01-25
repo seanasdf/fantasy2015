@@ -25,7 +25,6 @@ source("leaguesetup.R")
 source("draftpicks.R")
 source("mergeinprojections.R")
 source("calculatestandings.R")
-source("csvwriter.R")
 ```
 
 #Current Stats
