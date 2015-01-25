@@ -4,10 +4,21 @@ author: "Team Marmaduke"
 date: "Monday, January 19, 2015"
 output: html_document
 ---
+```{r setoptions, echo = FALSE}
+library(knitr)
+opts_chunk$set(echo = TRUE)
+```
+
 
 ``` {r echo = FALSE, warning=FALSE, error=FALSE, message = FALSE}
 setwd("C:\\Users\\Sean\\Documents\\Fantasy\\Fantasy Baseball 2015")
-source("valuecalculator.R")
+if (!(file.exists("hitter_projections.csv") & file.exists("pitcher_projections.csv"))) {
+      source("valuecalculator.R")      
+} else {
+      hitter_projections <- read.csv("hitter_projections.csv", stringsAsFactors = FALSE)
+      pitcher_projections <- read.csv("pitcher_projections.csv", stringsAsFactors = FALSE)
+}
+
 source("leaguesetup.R")
 source("draftpicks.R")
 source("mergeinprojections.R")
@@ -31,7 +42,7 @@ standings[,c(19:24)]
 ```
 
 #Scatter of Remaining Dollars vs. Current Points
-```{r, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
+```{r pointsgraph, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
 library(ggplot2)
 pointsline <- mean(standings$total_points)
 moneyline <- mean(standings$left)

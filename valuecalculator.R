@@ -225,4 +225,5 @@ pitcher_projections <- pitcher_projections[c("Name","position","playerid","IP","
 #round dollars and adjusted_points
 pitcher_projections[,10:11] <- round(pitcher_projections[,10:11],2)
 
-
+write.csv(pitcher_projections, file = "pitcher_projections.csv")
+write.csv(hitter_projections, file = "hitter_projections.csv")
