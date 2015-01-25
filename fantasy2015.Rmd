@@ -2,7 +2,9 @@
 title: "Fantasy Baseball 2015"
 author: "Team Marmaduke"
 date: "Monday, January 19, 2015"
-output: html_document
+output: 
+      html_document:
+            keep_md: true
 ---
 ```{r setoptions, echo = FALSE}
 library(knitr)
