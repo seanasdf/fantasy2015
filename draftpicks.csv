@@ -10,6 +10,8 @@ balco,Mike Zunino,12,C
 balco,C.J. Cron,4,1B
 balco,Robinson Cano,28,2B
 balco,Derek Holland,4,P
+balco,Denard Span,25,OF
+balco,Jason Kipnis,25,2B
 bellevegas,Jose Abreu,23,1B
 bellevegas,Josh Donaldson,11,3B
 bellevegas,Matt Adams,9,DH
@@ -67,6 +69,7 @@ pasadena,Jake Arrieta,5,P
 pasadena,Gerrit Cole,9,P
 pasadena,Dallas Keuchel,4,P
 pasadena,Cliff Lee,18,P
+pasadena,Aaron Hill,10,MI
 deano,Miguel Cabrera,44,1B
 deano,George Springer,4,OF
 deano,Ryan Braun,37,OF
@@ -74,7 +77,7 @@ deano,Neil Walker,16,2B
 deano,Pablo Sandoval,19,3B
 deano,Evan Gattis,9,C
 deano,Clint Frazier,0,B
-deano,Dustin Pedroia,19,2B
+deano,Dustin Pedroia,19,MI
 deano,Freddie Freeman,28,CI
 deano,Stephen Strasburg,24,P
 deano,Cody Allen,4,P
@@ -82,6 +85,7 @@ deano,Tyson Ross,9,P
 deano,Wade Davis,4,P
 deano,Tyler Glasnow,0,B
 deano,Anibal Sanchez,13,P
+deano,Yunel Escobar,3,SS
 deener,Adrian Gonzalez,33,1B
 deener,Hanley Ramirez,32,SS
 deener,David Ortiz,36,DH
@@ -103,6 +107,7 @@ dembums,Chris Sale,24,P
 dembums,Johnny Cueto,19,P
 dembums,Jeff Samardzija,14,P
 dembums,Michael Pineda,5,P
+dembums,Rusney Castillo,28,OF
 d&s,Melky Cabrera,9,OF
 d&s,Brian Dozier,9,2B
 d&s,J.D. Martinez,9,OF
@@ -132,6 +137,8 @@ jobu,R.A. Dickey,10,P
 jobu,Edinson Volquez,7,P
 jobu,Jonathan Papelbon,20,P
 jobu,Syndergaard,0,B
+jobu,Josmil Pinto,5,C
+jobu,Delmon Young,7,OF
 baycity,Oswaldo Arcia,9,OF
 baycity,Scooter Gennett,4,2B
 baycity,Wilson Ramos,9,C
@@ -211,6 +218,7 @@ marmaduke,Kenley Jansen,18,P
 marmaduke,Eddie Butler,4,P
 marmaduke,Mark Appel,0,B
 marmaduke,Robert Stephenson,4,P
+marmaduke,John Lackey,10,P
 isotopes,Jose Bautista,24,OF
 isotopes,Ian Desmond,28,SS
 isotopes,Buster Posey,24,C
