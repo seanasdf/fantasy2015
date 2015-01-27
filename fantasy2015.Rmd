@@ -1,7 +1,6 @@
 ---
 title: "Fantasy Baseball 2015"
-author: "Team Marmaduke"
-date: "Monday, January 19, 2015"
+
 output: 
       html_document:
             keep_md: true
@@ -25,6 +24,7 @@ source("leaguesetup.R")
 source("draftpicks.R")
 source("mergeinprojections.R")
 source("calculatestandings.R")
+source("csvwriter.R")
 ```
 
 #Current Stats
@@ -61,3 +61,16 @@ moneyvspoints
 ```
 
 
+#Top 50 Remaining Hitters
+```{r remaininghitters, echo=FALSE}
+topremainings <- hitter_projections[which(hitter_projections$status != "drafted"),]
+topremainings <- topremainings[1:50,c("Name","position","AB","R","HR","SB","RBI","AVG","dollar_value")]
+topremainings
+```
+
+#Top 50 Remaining Pitchers
+```{r remainingpitchers, echo=FALSE}
+topremainings <- pitcher_projections[which(pitcher_projections$status != "drafted"),]
+topremainings <- topremainings[1:50,c("Name","IP","ERA","WHIP","W","SV","K","dollar_value")]
+topremainings
+```

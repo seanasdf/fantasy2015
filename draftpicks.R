@@ -1,5 +1,6 @@
 #read csv of draft picks
-draftpicks <- read.csv("draftpicks.csv", stringsAsFactors = FALSE)
+library(xlsx)
+draftpicks <- read.xlsx("draftpicks.xlsx", sheetName = "draftpicks", stringsAsFactors = FALSE)
 
 #draft everything in the draft csv
 for (pick in 1:nrow(draftpicks)) {

@@ -1,23 +1,23 @@
+hitter_projections$status <- ""
+pitcher_projections$status <- ""
 
-#WRITE HITTERS TO CSV
+#Mark drafted hitters as drafted.
+for (player in hitter_projections$Name) {
+      if (player %in% draftpicks$player) {
+            hitter_projections[which(hitter_projections$Name == player),"status"] <- "drafted"
+      }
+}
 
-#drop any players worth less than $5
-hitter_projections <- filter(hitter_projections, dollar_value >= -5)
+#Mark drafted pitchers as drafted.
+for (player in pitcher_projections$Name) {
+      if (player %in% draftpicks$player) {
+            pitcher_projections[which(pitcher_projections$Name == player),"status"] <- "drafted"
+      }
+}
 
-#output to a csv
-write.csv(hitter_projections, file = "short_hitter_projections.csv")
-
-#WRITE PITCHERS TO CSV
-
-#drop players worth less than -$5
-pitcher_projections <- filter(pitcher_projections,dollar_value >= -5)
-
-#write out to a csv
-write.csv(pitcher_projections, file = "short_pitcher_projections.csv")
 
 #WRITE PLAYER PROJECTIONS TO CSV
 detach("package:dplyr",unload = TRUE)
-
 library("plyr")
 
 #Merge hitter and pitcher projections
@@ -27,4 +27,6 @@ player_projections <- player_projections[order(-player_projections$dollar_value)
 detach("package:plyr",unload = TRUE)
 
 #write player projections to csv
-write.csv(player_projections, file = "short_player_projections.csv")
+write.csv(player_projections, file = "player_projections.csv")
+
+
