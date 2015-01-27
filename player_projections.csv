@@ -87,7 +87,7 @@
 "563",28,"Madison Bumgarner","pitcher","5524",NA,NA,NA,NA,NA,NA,8.08,22.76,"drafted",201,2.96,1.11,0,13,203
 "82",23,"Oswaldo Arcia","outfield","10306",487,65,24,74,4,0.258,6.29,22.6,"drafted",NA,NA,NA,NA,NA,NA
 "83",140,"Nori Aoki","outfield","13075",531,70,6,44,18,0.279,6.27,22.51,"",NA,NA,NA,NA,NA,NA
-"84",665,"Salvador Perez","catcher","7304",449,52,14,58,1,0.274,6.26,22.49,"",NA,NA,NA,NA,NA,NA
+"84",665,"Salvador Perez","catcher","7304",449,52,14,58,1,0.274,6.26,22.49,"drafted",NA,NA,NA,NA,NA,NA
 "85",400,"Dexter Fowler","outfield","4062",526,74,11,55,13,0.246,6.25,22.47,"",NA,NA,NA,NA,NA,NA
 "86",26,"Marcell Ozuna","outfield","10324",565,66,22,76,4,0.255,6.15,22.14,"drafted",NA,NA,NA,NA,NA,NA
 "87",375,"David Wright","third_base","3787",512,66,16,65,9,0.275,6.15,22.13,"",NA,NA,NA,NA,NA,NA
@@ -127,7 +127,7 @@
 "114",640,"Ian Desmond","shortstop","6885",564,68,18,72,18,0.258,4.82,17.78,"drafted",NA,NA,NA,NA,NA,NA
 "115",606,"Michael Bourn","outfield","6387",543,69,5,43,19,0.253,4.8,17.7,"",NA,NA,NA,NA,NA,NA
 "571",1,"Aroldis Chapman","pitcher","10233",NA,NA,NA,NA,NA,NA,6.27,17.68,"drafted",65,1.42,0.87,31,4,114
-"116",225,"Adam LaRoche","first_base","1904",505,73,25,77,2,0.239,4.77,17.63,"",NA,NA,NA,NA,NA,NA
+"116",225,"Adam LaRoche","first_base","1904",505,73,25,77,2,0.239,4.77,17.63,"drafted",NA,NA,NA,NA,NA,NA
 "117",108,"Xander Bogaerts","third_base","12161",493,64,15,63,5,0.256,4.77,17.61,"drafted",NA,NA,NA,NA,NA,NA
 "118",192,"Chase Utley","second_base","1679",544,65,14,62,7,0.258,4.69,17.35,"drafted",NA,NA,NA,NA,NA,NA
 "119",133,"Gregory Polanco","outfield","12907",512,64,14,54,23,0.25,4.6,17.05,"drafted",NA,NA,NA,NA,NA,NA
@@ -168,7 +168,7 @@
 "144",564,"Carlos Beltran","outfield","589",414,56,17,58,3,0.26,3.64,13.92,"",NA,NA,NA,NA,NA,NA
 "145",377,"J.J. Hardy","shortstop","3797",570,64,17,65,2,0.253,3.62,13.85,"",NA,NA,NA,NA,NA,NA
 "146",109,"Maikel Franco","third_base","12179",542,59,19,63,3,0.244,3.61,13.82,"drafted",NA,NA,NA,NA,NA,NA
-"147",280,"Lucas Duda","first_base","2502",534,69,24,75,3,0.234,3.58,13.7,"",NA,NA,NA,NA,NA,NA
+"147",280,"Lucas Duda","first_base","2502",534,69,24,75,3,0.234,3.58,13.7,"drafted",NA,NA,NA,NA,NA,NA
 "148",795,"Logan Morrison","first_base","9205",514,67,20,70,5,0.254,3.57,13.68,"",NA,NA,NA,NA,NA,NA
 "582",84,"Alex Cobb","pitcher","6562",NA,NA,NA,NA,NA,NA,4.82,13.58,"drafted",192,3.5,1.23,0,12,168
 "149",104,"Carl Crawford","outfield","1201",461,56,11,51,19,0.273,3.53,13.56,"drafted",NA,NA,NA,NA,NA,NA
@@ -258,13 +258,13 @@
 "630",195,"Addison Reed","pitcher","10586",NA,NA,NA,NA,NA,NA,3.07,8.65,"",65,3.25,1.16,31,3,65
 "631",765,"Tony Cingrani","pitcher","12555",NA,NA,NA,NA,NA,NA,3.06,8.63,"",163,3.72,1.29,0,10,170
 "632",365,"Matt Cain","pitcher","4732",NA,NA,NA,NA,NA,NA,3.06,8.63,"",173,3.75,1.24,0,10,144
-"186",438,"James Loney","first_base","4556",548,61,11,63,3,0.271,1.99,8.53,"",NA,NA,NA,NA,NA,NA
+"186",438,"James Loney","first_base","4556",548,61,11,63,3,0.271,1.99,8.53,"drafted",NA,NA,NA,NA,NA,NA
 "633",109,"Drew Storen","pitcher","6983",NA,NA,NA,NA,NA,NA,3,8.44,"drafted",65,3.36,1.2,33,3,57
 "634",82,"Zach Britton","pitcher","3240",NA,NA,NA,NA,NA,NA,2.99,8.44,"drafted",65,3.22,1.26,34,3,56
 "635",92,"Garrett Richards","pitcher","9784",NA,NA,NA,NA,NA,NA,2.99,8.43,"drafted",153,3.64,1.25,0,11,139
 "636",243,"Rick Porcello","pitcher","2717",NA,NA,NA,NA,NA,NA,2.98,8.39,"drafted",192,3.98,1.29,0,13,132
 "187",684,"Alex Avila","catcher","7476",334,43,10,40,2,0.23,1.93,8.31,"",NA,NA,NA,NA,NA,NA
-"188",707,"Brandon Phillips","second_base","791",495,53,12,55,4,0.259,1.91,8.24,"",NA,NA,NA,NA,NA,NA
+"188",707,"Brandon Phillips","second_base","791",495,53,12,55,4,0.259,1.91,8.24,"drafted",NA,NA,NA,NA,NA,NA
 "189",814,"Matt Adams","first_base","9393",472,57,19,69,3,0.268,1.9,8.22,"drafted",NA,NA,NA,NA,NA,NA
 "637",91,"Tyson Ross","pitcher","7872",NA,NA,NA,NA,NA,NA,2.89,8.14,"drafted",163,3.69,1.28,0,10,155
 "638",1127,"Jered Weaver","pitcher","4235",NA,NA,NA,NA,NA,NA,2.87,8.09,"drafted",192,4.15,1.28,0,12,148
@@ -377,10 +377,10 @@
 "700",1405,"Hector Santiago","pitcher","4026",NA,NA,NA,NA,NA,NA,0.65,1.83,"",145,4.07,1.36,0,9,120
 "701",59,"Yusmeiro Petit","pitcher","4020",NA,NA,NA,NA,NA,NA,0.64,1.79,"",88,3.05,1.09,0,5,86
 "702",742,"Ricky Nolasco","pitcher","3830",NA,NA,NA,NA,NA,NA,0.62,1.74,"",173,4.56,1.33,0,10,121
-"703",936,"Bud Norris","pitcher","9492",NA,NA,NA,NA,NA,NA,0.49,1.38,"",125,4.04,1.29,0,8,106
+"703",936,"Bud Norris","pitcher","9492",NA,NA,NA,NA,NA,NA,0.49,1.38,"drafted",125,4.04,1.29,0,8,106
 "704",1493,"Trevor Bauer","pitcher","12703",NA,NA,NA,NA,NA,NA,0.46,1.31,"",182,4.63,1.43,0,10,164
 "235",319,"Dioner Navarro","catcher","3179",235,28,7,30,1,0.263,-0.22,1.29,"",NA,NA,NA,NA,NA,NA
-"705",283,"Brandon Morrow","pitcher","9346",NA,NA,NA,NA,NA,NA,0.41,1.16,"",125,4.01,1.29,0,7,113
+"705",283,"Brandon Morrow","pitcher","9346",NA,NA,NA,NA,NA,NA,0.41,1.16,"drafted",125,4.01,1.29,0,7,113
 "236",245,"Ryan Doumit","catcher","2113",294,32,9,35,2,0.237,-0.26,1.14,"",NA,NA,NA,NA,NA,NA
 "706",1182,"Ryan Vogelsong","pitcher","1011",NA,NA,NA,NA,NA,NA,0.4,1.12,"",163,4.44,1.35,0,9,124
 "707",1522,"Jeremy Guthrie","pitcher","2072",NA,NA,NA,NA,NA,NA,0.39,1.11,"drafted",192,4.5,1.35,0,10,112
@@ -409,7 +409,7 @@
 "723",571,"Odrisamer Despaigne","pitcher","16017",NA,NA,NA,NA,NA,NA,-0.17,-0.48,"drafted",144,4.34,1.37,0,8,112
 "724",45,"Will Smith","pitcher","8048",NA,NA,NA,NA,NA,NA,-0.18,-0.51,"",74,3.14,1.18,2,4,83
 "725",40,"Jason Grilli","pitcher","521",NA,NA,NA,NA,NA,NA,-0.18,-0.52,"",65,2.67,1.11,3,3,74
-"726",384,"Tyler Clippard","pitcher","5640",NA,NA,NA,NA,NA,NA,-0.19,-0.52,"",65,3.08,1.19,6,4,65
+"726",384,"Tyler Clippard","pitcher","5640",NA,NA,NA,NA,NA,NA,-0.19,-0.52,"drafted",65,3.08,1.19,6,4,65
 "727",24,"Ken Giles","pitcher","12910",NA,NA,NA,NA,NA,NA,-0.23,-0.64,"",65,2.81,1.16,3,3,84
 "244",647,"J.P. Arencibia","catcher","697",314,33,13,40,1,0.209,-0.82,-0.69,"",NA,NA,NA,NA,NA,NA
 "245",511,"Francisco Cervelli","catcher","5275",298,30,4,29,3,0.246,-0.87,-0.84,"drafted",NA,NA,NA,NA,NA,NA

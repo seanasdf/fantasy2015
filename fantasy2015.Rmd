@@ -60,10 +60,22 @@ moneyvspoints <-    ggplot(data=standings, aes(x=left, y = total_points, label =
 moneyvspoints
 ```
 
+#Top 50 Hitter Targets
+```{r hittertargets, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
+library(dplyr)
+topremainings <- filter(hitter_projections, status != "drafted",
+                                            position == "catcher" | 
+                                            position == "second_base" | 
+                                            position == "shortstop"
+                        )
+
+topremainings <- topremainings[1:50,c("Name","position","AB","R","HR","SB","RBI","AVG","dollar_value")]
+topremainings
+```
 
 #Top 50 Remaining Hitters
 ```{r remaininghitters, echo=FALSE}
-topremainings <- hitter_projections[which(hitter_projections$status != "drafted"),]
+topremainings <- filter(hitter_projections, status != "drafted")
 topremainings <- topremainings[1:50,c("Name","position","AB","R","HR","SB","RBI","AVG","dollar_value")]
 topremainings
 ```
