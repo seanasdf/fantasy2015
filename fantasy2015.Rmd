@@ -27,6 +27,15 @@ source("calculatestandings.R")
 source("csvwriter.R")
 ```
 
+#league status
+```{r, echo=FALSE}
+standings[,c("spent","left","picks_left","dollars_per_pick")]
+dollars_per_pick <- round(sum(standings$left)/sum(standings$picks_left), 2)
+```
+###Total Dollars Left: **`r sum(standings$left)`**
+###Total Picks Left: **$`r sum(standings$picks_left)`**
+###Average Dollars/Pick: **$`r dollars_per_pick`**
+
 #Current Stats
 ```{r, echo=FALSE}
 standings[,c("R","HR","RBI","SB","AVG","ERA","WHIP","K","SV","W","spent","left")]
