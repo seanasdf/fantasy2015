@@ -29,17 +29,17 @@ source("csvwriter.R")
 
 #Current Stats
 ```{r, echo=FALSE}
-standings[,c(2:13)]
+standings[,c("R","HR","RBI","SB","AVG","ERA","WHIP","K","SV","W","spent","left")]
 ```
 
 #Hitting Points
 ```{r, echo=FALSE}
-standings[,c(14:18,24)]
+standings[,c("R_pts", "HR_pts","RBI_pts","SB_pts","AVG_pts","total_points")]
 ```
 
 #Pitching Points
 ```{r, echo=FALSE}
-standings[,c(19:24)]
+standings[,c("ERA_pts","WHIP_pts","K_pts","SV_pts","W_pts","total_points")]
 ```
 
 #Scatter of Remaining Dollars vs. Current Points

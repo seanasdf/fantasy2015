@@ -19,7 +19,10 @@ for (team in teams) {
       team_W <- sum(temp$W, na.rm=TRUE)
       
       team_salary <- sum(temp$salary, na.rm=TRUE)
-      salary_remaining <- 260-sum(temp$salary, na.rm=TRUE)
+      salary_left <- 260-sum(temp$salary, na.rm=TRUE)
+      
+      picks_left <- sum(temp$Name[1:25]=="")
+      dollars_per_pick <- salary_left/picks_left
       
       #merge team's stats in to standings
       standings <- data.frame(
@@ -35,7 +38,9 @@ for (team in teams) {
                   SV = c(standings$SV, team_SV),
                   W = c(standings$W, team_W),
                   spent = c(standings$spent, team_salary), 
-                  left = c(standings$left, salary_remaining),
+                  left = c(standings$salary_left, salary_left),
+                  picks_left <- c(standings$picks_left, picks_left),
+                  dollars_per_pick <- c(standings$dollars_per_pick, dollars_per_pick),                  
                   stringsAsFactors = FALSE
             )
 }
