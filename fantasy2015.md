@@ -8,28 +8,28 @@
 
 ```
 ##            spent left picks_left dollars_per_pick
-## rippe        246   14          6         2.333333
-## isotopes     223   37          9         4.111111
-## bellevegas   246   14          5         2.800000
-## marmaduke    233   27          6         4.500000
-## dembums      210   50         11         4.545455
-## pk dodgers   265   -5          0             -Inf
-## jobu         241   19          3         6.333333
-## d&s          225   35         11         3.181818
-## deano        245   15          9         1.666667
-## bears        209   51          8         6.375000
-## pasadena     203   57          7         8.142857
-## ottawa       204   56         10         5.600000
-## deener       232   28         12         2.333333
-## balco        204   56         11         5.090909
-## virginia     200   60         13         4.615385
-## sturgeon     182   78          7        11.142857
-## counsel      196   64         13         4.923077
-## baycity      154  106         13         8.153846
+## rippe        246   14          6             2.33
+## isotopes     223   37          9             4.11
+## bellevegas   246   14          5             2.80
+## marmaduke    233   27          6             4.50
+## dembums      210   50         11             4.55
+## pk dodgers   260    0          0              NaN
+## jobu         241   19          3             6.33
+## d&s          225   35         11             3.18
+## deano        245   15          9             1.67
+## bears        209   51          8             6.38
+## pasadena     203   57          7             8.14
+## ottawa       204   56         10             5.60
+## deener       232   28         12             2.33
+## balco        204   56         11             5.09
+## virginia     200   60         13             4.62
+## sturgeon     182   78          7            11.14
+## counsel      196   64         13             4.92
+## baycity      154  106         13             8.15
 ```
-###Total Dollars Left: **762**
-###Total Picks Left: **154**
-###Average Dollars/Pick: **$4.95**
+###Total Dollars Left: **767**
+###Total Picks Left: **$154**
+###Average Dollars/Pick: **$4.98**
 
 #Current Stats
 
@@ -40,7 +40,7 @@
 ## bellevegas 879 251 910  99.1 0.259 3.92 1.27 1252 41 82   246   14
 ## marmaduke  886 223 843 145.2 0.259 3.95 1.28  996 75 51   233   27
 ## dembums    800 209 799 101.3 0.267 3.88 1.27 1264 52 58   210   50
-## pk dodgers 741 157 692 145.0 0.257 3.46 1.20 1238 65 87   265   -5
+## pk dodgers 741 157 692 145.0 0.257 3.46 1.20 1238 65 87   260    0
 ## jobu       928 185 803 148.0 0.257 4.12 1.30 1196 68 89   241   19
 ## d&s        760 167 734 101.2 0.261 3.57 1.22 1393 51 84   225   35
 ## deano      843 219 848 101.0 0.269 3.94 1.30 1157 54 47   245   15

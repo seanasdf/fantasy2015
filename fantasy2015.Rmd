@@ -29,6 +29,7 @@ source("csvwriter.R")
 
 #league status
 ```{r, echo=FALSE}
+standings$dollars_per_pick <-round(standings$dollars_per_pick, 2)
 standings[,c("spent","left","picks_left","dollars_per_pick")]
 dollars_per_pick <- round(sum(standings$left)/sum(standings$picks_left), 2)
 ```
