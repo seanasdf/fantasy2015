@@ -24,6 +24,8 @@ for (team in teams) {
       picks_left <- sum(temp$Name[1:25]=="")
       dollars_per_pick <- salary_left/picks_left
       
+      max_bid <- salary_left + 1 - picks_left
+      
       #merge team's stats in to standings
       standings <- data.frame(
                   team_name = c(standings$team_name, team),
@@ -41,12 +43,14 @@ for (team in teams) {
                   left = c(standings$left, salary_left),
                   picks_left <- c(standings$picks_left, picks_left),
                   dollars_per_pick <- c(standings$dollars_per_pick, dollars_per_pick),                  
+                  max_bid <- c(standings$max_bid, max_bid),
                   stringsAsFactors = FALSE
             )
 }
 
 names(standings)[14] <- "picks_left"
 names(standings)[15] <- "dollars_per_pick"
+names(standings)[16] <- "max_bid"
 
 #calculate points
 standings$R_pts <- rank(standings$R)
