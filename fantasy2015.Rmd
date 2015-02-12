@@ -74,7 +74,6 @@ moneyvspoints
 ```{r hittertargets, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
 library(dplyr)
 topremainings <- filter(hitter_projections, status != "drafted",
-                                            position == "catcher" | 
                                             position == "second_base" | 
                                             position == "shortstop"
                         )
