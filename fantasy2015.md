@@ -8,99 +8,99 @@
 
 ```
 ##            spent left picks_left dollars_per_pick max_bid
+## marmaduke    259    1          1             1.00       1
 ## pasadena     260    0          0              NaN       1
-## isotopes     245   15          4             3.75      12
-## marmaduke    256    4          2             2.00       3
+## isotopes     246   14          3             4.67      12
 ## rippe        257    3          3             1.00       1
-## ottawa       249   11          2             5.50      10
-## bellevegas   257    3          3             1.00       1
+## ottawa       254    6          1             6.00       6
 ## d&s          246   14          8             1.75       7
 ## baycity      230   30          4             7.50      27
 ## pk dodgers   260    0          0              NaN       1
+## bellevegas   257    3          3             1.00       1
+## dembums      242   18          5             3.60      14
+## bears        240   20          2            10.00      19
+## virginia     239   21          4             5.25      18
 ## jobu         227   33          1            33.00      33
-## bears        239   21          3             7.00      19
-## virginia     238   22          5             4.40      18
-## dembums      239   21          6             3.50      16
-## deano        251    9          7             1.29       3
+## deano        252    8          6             1.33       3
 ## sturgeon     239   21          0              Inf      22
 ## deener       234   26         10             2.60      17
 ## balco        221   39          9             4.33      31
-## counsel      227   33          7             4.71      27
+## counsel      230   30          6             5.00      25
 ```
-###Total Dollars Left: **$305**
-###Total Picks Left: **74**
-###Average Dollars/Pick: **$4.12**
+###Total Dollars Left: **$287**
+###Total Picks Left: **66**
+###Average Dollars/Pick: **$4.35**
 
 #Current Stats
 
 ```
 ##              R  HR RBI    SB   AVG  ERA WHIP    K SV  W spent left
+## marmaduke  938 230 876 151.0 0.259 3.69 1.23 1120 63 78   259    1
 ## pasadena   903 249 910 123.0 0.257 3.63 1.24 1273 37 83   260    0
-## isotopes   873 227 876 122.8 0.262 3.70 1.25 1151 64 81   245   15
-## marmaduke  938 230 876 151.0 0.259 3.78 1.24 1052 67 69   256    4
+## isotopes   849 224 852 117.8 0.262 3.70 1.25 1151 64 81   246   14
 ## rippe      998 211 870 159.0 0.270 3.86 1.26 1121 60 76   257    3
-## ottawa     880 217 862 140.9 0.257 3.80 1.25 1205 66 83   249   11
-## bellevegas 921 266 952  95.9 0.258 3.92 1.27 1252 41 82   257    3
+## ottawa     862 216 850 134.0 0.257 3.80 1.25 1205 66 83   254    6
 ## d&s        755 176 740  93.3 0.260 3.42 1.19 1379 54 87   246   14
 ## baycity    862 220 866 119.0 0.257 3.84 1.26 1212 88 73   230   30
 ## pk dodgers 741 157 692 145.0 0.257 3.46 1.20 1238 65 87   260    0
+## bellevegas 921 266 952  95.9 0.258 3.92 1.27 1252 41 82   257    3
+## dembums    818 223 822  96.9 0.267 3.82 1.25 1313 48 68   242   18
+## bears      830 214 799 129.8 0.253 3.73 1.24 1276 47 87   240   20
+## virginia   905 231 883  84.8 0.261 3.82 1.27  810 63 50   239   21
 ## jobu       888 162 745 164.0 0.258 4.12 1.30 1196 68 89   227   33
-## bears      830 214 799 129.8 0.253 3.76 1.25 1243 51 79   239   21
-## virginia   905 231 883  84.8 0.261 3.93 1.28  836 67 45   238   22
-## dembums    818 223 822  96.9 0.267 3.88 1.27 1264 52 58   239   21
-## deano      843 219 848 101.0 0.269 3.83 1.28 1155 50 58   251    9
+## deano      843 219 848 101.0 0.269 3.75 1.26 1053 46 57   252    8
 ## sturgeon   772 202 788 117.0 0.260 4.07 1.32 1283 42 89   239   21
 ## deener     731 161 718 126.2 0.261 3.72 1.25 1168 52 65   234   26
 ## balco      864 194 806 135.9 0.256 4.32 1.37  993 86 25   221   39
-## counsel    849 195 788 109.9 0.262 4.15 1.33 1052 46 41   227   33
+## counsel    849 195 788 109.9 0.262 4.08 1.31  982 47 42   230   30
 ```
 
 #Hitting Points
 
 ```
 ##            R_pts HR_pts RBI_pts SB_pts AVG_pts total_points
-## pasadena      14     17    17.0     10     4.5          125
-## isotopes      11     14    14.5      9    14.5          121
-## marmaduke     17     15    14.5     16     9.0          120
-## rippe         18      8    13.0     17    18.0          114
-## ottawa        12     10    11.0     14     4.5          110
-## bellevegas    16     18    18.0      3     7.5          102
-## d&s            3      4     3.0      2    10.5          101
-## baycity        9     12    12.0      8     4.5          100
-## pk dodgers     2      1     1.0     15     4.5           97
-## jobu          13      3     4.0     18     7.5           94
-## bears          6      9     7.0     12     1.0           90
-## virginia      15     16    16.0      1    12.5           89
-## dembums        5     13     9.0      4    16.0           88
-## deano          7     11    10.0      5    17.0           86
-## sturgeon       4      7     5.5      7    10.5           80
-## deener         1      2     2.0     11    12.5           78
-## balco         10      5     8.0     13     2.0           60
-## counsel        8      6     5.5      6    14.5           54
+## marmaduke   17.0     15    15.0     16     9.0          128
+## pasadena    14.0     17    17.0     10     4.5          122
+## isotopes     8.5     14    12.0      8    14.5          115
+## rippe       18.0      8    14.0     17    18.0          111
+## ottawa      10.5     10    11.0     13     4.5          106
+## d&s          3.0      4     3.0      2    10.5          100
+## baycity     10.5     12    13.0      9     4.5           99
+## pk dodgers   2.0      1     1.0     15     4.5           98
+## bellevegas  16.0     18    18.0      3     7.5           98
+## dembums      5.0     13     9.0      4    16.0           94
+## bears        6.0      9     7.0     12     1.0           94
+## virginia    15.0     16    16.0      1    12.5           93
+## jobu        13.0      3     4.0     18     7.5           92
+## deano        7.0     11    10.0      5    17.0           84
+## sturgeon     4.0      7     5.5      7    10.5           78
+## deener       1.0      2     2.0     11    12.5           76
+## balco       12.0      5     8.0     14     2.0           64
+## counsel      8.5      6     5.5      6    14.5           56
 ```
 
 #Pitching Points
 
 ```
 ##            ERA_pts WHIP_pts K_pts SV_pts W_pts total_points
-## pasadena        16       16  16.0    1.0  13.5          125
-## isotopes        15       15   6.0   11.0  11.0          121
-## marmaduke       12       12   3.5   14.5   7.0          120
-## rippe            8        8   5.0   10.0   9.0          114
-## ottawa          11       11  10.0   13.0  13.5          110
-## bellevegas       6        6  14.0    2.0  12.0          102
-## d&s             18       18  18.0    9.0  15.5          101
-## baycity          9        9  11.0   18.0   8.0          100
-## pk dodgers      17       17  12.0   12.0  15.5           97
-## jobu             3        3   9.0   16.0  17.5           94
-## bears           13       13  13.0    6.0  10.0           90
-## virginia         5        5   1.0   14.5   3.0           89
-## dembums          7        7  15.0    7.5   4.5           88
-## deano           10       10   7.0    5.0   4.5           86
-## sturgeon         4        4  17.0    3.0  17.5           80
-## deener          14       14   8.0    7.5   6.0           78
-## balco            1        1   2.0   17.0   1.0           60
-## counsel          2        2   3.5    4.0   2.0           54
+## marmaduke     15.0     15.0     5   11.5   9.0          128
+## pasadena      16.0     16.0    14    1.0  12.5          122
+## isotopes      14.0     14.0     7   13.0  10.0          115
+## rippe          6.0      6.0     6   10.0   8.0          111
+## ottawa        10.0     10.0    10   15.0  12.5          106
+## d&s           18.0     18.0    18    9.0  15.0          100
+## baycity        7.0      7.0    11   18.0   7.0           99
+## pk dodgers    17.0     17.0    12   14.0  15.0           98
+## bellevegas     5.0      5.0    13    2.0  11.0           98
+## dembums        8.5      8.5    17    7.0   6.0           94
+## bears         12.0     12.0    15    5.5  15.0           94
+## virginia       8.5      8.5     1   11.5   3.0           93
+## jobu           2.0      2.0     9   16.0  17.5           92
+## deano         11.0     11.0     4    4.0   4.0           84
+## sturgeon       4.0      4.0    16    3.0  17.5           78
+## deener        13.0     13.0     8    8.0   5.0           76
+## balco          1.0      1.0     3   17.0   1.0           64
+## counsel        3.0      3.0     2    5.5   2.0           56
 ```
 
 #Scatter of Remaining Dollars vs. Current Points
@@ -149,17 +149,17 @@
 ## 37      Andrew Romine   shortstop 205 21  2  7  18 0.236       -24.65
 ## 38    Tommy La Stella second_base  90 10  1  1   9 0.270       -24.76
 ## 39      Eduardo Nunez   shortstop 143 16  2  5  15 0.258       -25.04
-## 40      Nick Franklin second_base 123 15  3  2  13 0.235       -25.49
-## 41     Donovan Solano second_base 122 12  1  1  10 0.251       -26.07
-## 42   Jonathan Herrera second_base 150 14  1  3  13 0.235       -26.94
-## 43      Phil Gosselin second_base 113 11  1  1   9 0.248       -27.21
-## 44      Marco Scutaro second_base  66  7  1  1   5 0.265       -27.61
-## 45       Clint Barmes   shortstop 237 20  4  2  21 0.212       -28.06
-## 46          Dean Anna   shortstop 148 16  2  2  14 0.234       -28.48
-## 47  Tyler Pastornicky second_base  85  8  1  2   8 0.248       -29.34
-## 48      Brandon Hicks second_base 144 15  5  1  16 0.203       -29.35
-## 49       Adam Rosales   shortstop 114 13  3  1  12 0.240       -29.38
-## 50       Leury Garcia second_base 151 14  2  8  12 0.215       -29.44
+## 40     Donovan Solano second_base 122 12  1  1  10 0.251       -26.07
+## 41   Jonathan Herrera second_base 150 14  1  3  13 0.235       -26.94
+## 42      Phil Gosselin second_base 113 11  1  1   9 0.248       -27.21
+## 43      Marco Scutaro second_base  66  7  1  1   5 0.265       -27.61
+## 44       Clint Barmes   shortstop 237 20  4  2  21 0.212       -28.06
+## 45          Dean Anna   shortstop 148 16  2  2  14 0.234       -28.48
+## 46  Tyler Pastornicky second_base  85  8  1  2   8 0.248       -29.34
+## 47      Brandon Hicks second_base 144 15  5  1  16 0.203       -29.35
+## 48       Adam Rosales   shortstop 114 13  3  1  12 0.240       -29.38
+## 49       Leury Garcia second_base 151 14  2  8  12 0.215       -29.44
+## 50         Pete Kozma   shortstop 175 16  2  3  16 0.226       -29.63
 ```
 
 #Top 50 Remaining Hitters
@@ -222,16 +222,13 @@
 
 ```
 ##                   Name  IP  ERA WHIP  W SV   K dollar_value
-## 56         CC Sabathia 192 3.94 1.25 11  0 151         9.35
 ## 66       Huston Street  65 3.52 1.20  3 35  56         8.93
-## 73       Tony Cingrani 163 3.72 1.29 10  0 170         8.63
 ## 96        Jason Vargas 182 4.11 1.28 11  0 121         5.79
 ## 97          Tim Hudson 182 3.92 1.28 10  0 117         5.68
 ## 101          J.A. Happ 163 4.01 1.30 10  0 138         5.47
 ## 102       Tim Lincecum 169 4.01 1.30  9  0 147         5.42
 ## 107      Bartolo Colon 173 4.16 1.23  9  0 120         5.13
 ## 110         Wade Miley 173 4.21 1.35 12  0 133         4.77
-## 111  Jeremy Hellickson 173 4.15 1.28  9  0 135         4.77
 ## 117         Matt Moore 163 4.04 1.35 10  0 144         4.51
 ## 118      Shelby Miller 173 4.15 1.33  9  0 152         4.48
 ## 123     LaTroy Hawkins  65 3.96 1.29  3 28  47         4.13
@@ -268,8 +265,11 @@
 ## 175     Junichi Tazawa  65 3.08 1.15  4  2  64        -1.78
 ## 176       Darren O'Day  65 3.12 1.14  4  2  63        -1.81
 ## 177      Scott Feldman 189 4.94 1.40 10  0 119        -1.87
-## 178     Brett Anderson  96 3.72 1.30  6  0  76        -1.88
 ## 179          Mike Dunn  65 2.96 1.19  3  3  71        -1.89
 ## 180     Marco Gonzales  93 3.61 1.28  5  0  78        -2.06
 ## 182  Brett Oberholtzer 153 4.73 1.36  8  0 103        -2.12
+## 183    Miguel Gonzalez 134 4.56 1.36  8  0  93        -2.13
+## 184       Jimmy Nelson 111 4.24 1.35  6  0  99        -2.28
+## 185  Carlos Villanueva  65 3.49 1.19  3  6  57        -2.31
+## 186       Aaron Harang 163 4.73 1.39  7  0 124        -2.35
 ```
