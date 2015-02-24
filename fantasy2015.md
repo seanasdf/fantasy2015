@@ -103,7 +103,7 @@
 ## counsel          4        4     2      4   2.0           56
 ```
 
-#Scatter of Remaining Dollars vs. Current Points
+#Scatter of Remaining Picks vs. Current Points
 ![](fantasy2015_files/figure-html/pointsgraph-1.png) 
 
 #Top 50 Hitter Targets

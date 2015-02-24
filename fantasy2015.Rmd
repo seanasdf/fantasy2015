@@ -52,7 +52,7 @@ standings[,c("R_pts", "HR_pts","RBI_pts","SB_pts","AVG_pts","total_points")]
 standings[,c("ERA_pts","WHIP_pts","K_pts","SV_pts","W_pts","total_points")]
 ```
 
-#Scatter of Remaining Dollars vs. Current Points
+#Scatter of Remaining Picks vs. Current Points
 ```{r pointsgraph, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
 library(ggplot2)
 pointsline <- mean(standings$total_points)
@@ -64,7 +64,7 @@ moneyvspoints <-    ggplot(data=standings, aes(x=picks_left, y = total_points, l
             geom_point(shape = 1, size = 3) +
             geom_text(hjust = 1.1) +
             stat_smooth(method=lm, se=FALSE) +
-            xlab("Dollars Remaining") +
+            xlab("Picks Remaining") +
             ylab("Current Points")
 
 moneyvspoints
