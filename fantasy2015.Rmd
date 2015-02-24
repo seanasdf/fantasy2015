@@ -60,7 +60,7 @@ moneyline <- mean(standings$left)
 
 
 
-moneyvspoints <-    ggplot(data=standings, aes(x=left, y = total_points, label = rownames(standings))) + 
+moneyvspoints <-    ggplot(data=standings, aes(x=picks_left, y = total_points, label = rownames(standings))) + 
             geom_point(shape = 1, size = 3) +
             geom_text(hjust = 1.1) +
             stat_smooth(method=lm, se=FALSE) +

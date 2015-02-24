@@ -11,95 +11,95 @@
 ## marmaduke    259    1          1             1.00       1
 ## pasadena     260    0          0              NaN       1
 ## isotopes     250   10          2             5.00       9
-## rippe        257    3          3             1.00       1
-## ottawa       254    6          1             6.00       6
+## rippe        258    2          2             1.00       1
 ## deano        255    5          5             1.00       1
-## d&s          248   12          7             1.71       6
-## bellevegas   257    3          3             1.00       1
+## d&s          249   11          6             1.83       6
 ## baycity      230   30          4             7.50      27
+## bellevegas   258    2          2             1.00       1
 ## pk dodgers   260    0          0              NaN       1
 ## dembums      242   18          5             3.60      14
+## ottawa       255    5          0              Inf       6
 ## bears        240   20          2            10.00      19
+## virginia     246   14          2             7.00      13
 ## jobu         227   33          1            33.00      33
-## virginia     243   17          3             5.67      15
+## deener       244   16          7             2.29      10
 ## sturgeon     239   21          0              Inf      22
-## deener       238   22          9             2.44      14
 ## balco        222   38          8             4.75      31
 ## counsel      240   20          4             5.00      17
 ```
-###Total Dollars Left: **$259**
-###Total Picks Left: **58**
-###Average Dollars/Pick: **$4.47**
+###Total Dollars Left: **$246**
+###Total Picks Left: **51**
+###Average Dollars/Pick: **$4.82**
 
 #Current Stats
 
 ```
-##              R  HR RBI    SB   AVG  ERA WHIP    K SV  W spent left
-## marmaduke  938 230 876 151.0 0.259 3.69 1.23 1120 63 78   259    1
-## pasadena   903 249 910 123.0 0.257 3.63 1.24 1273 37 83   260    0
-## isotopes   846 220 845 135.9 0.262 3.70 1.25 1151 64 81   250   10
-## rippe      998 211 870 159.0 0.270 3.86 1.26 1121 60 76   257    3
-## ottawa     862 216 850 134.0 0.257 3.80 1.25 1205 66 83   254    6
-## deano      843 219 848 101.0 0.269 3.67 1.25  998 70 59   255    5
-## d&s        765 175 746  94.3 0.261 3.42 1.19 1379 54 87   248   12
-## bellevegas 921 266 952  95.9 0.258 3.92 1.27 1252 41 82   257    3
-## baycity    862 220 866 119.0 0.257 3.84 1.26 1212 88 73   230   30
-## pk dodgers 741 157 692 145.0 0.257 3.46 1.20 1238 65 87   260    0
-## dembums    818 223 822  96.9 0.267 3.82 1.25 1313 48 68   242   18
-## bears      830 214 799 129.8 0.253 3.73 1.24 1276 47 87   240   20
-## jobu       888 162 745 164.0 0.258 4.12 1.30 1196 68 89   227   33
-## virginia   905 231 883  84.8 0.261 3.83 1.26  828 59 59   243   17
-## sturgeon   772 202 788 117.0 0.260 4.07 1.32 1283 42 89   239   21
-## deener     751 161 735 125.3 0.262 3.72 1.25 1168 52 65   238   22
-## balco      875 198 821 134.0 0.255 4.32 1.37  993 86 25   222   38
-## counsel    849 195 788 109.9 0.262 3.96 1.28  990 43 52   240   20
+##               R  HR RBI    SB   AVG  ERA WHIP    K SV  W spent left
+## marmaduke   938 230 876 151.0 0.259 3.69 1.23 1120 63 78   259    1
+## pasadena    903 249 910 123.0 0.257 3.63 1.24 1273 37 83   260    0
+## isotopes    846 220 845 135.9 0.262 3.70 1.25 1151 64 81   250   10
+## rippe      1014 210 875 169.1 0.270 3.86 1.26 1121 60 76   258    2
+## deano       843 219 848 101.0 0.269 3.67 1.25  998 70 59   255    5
+## d&s         771 177 759  92.3 0.261 3.42 1.19 1379 54 87   249   11
+## baycity     862 220 866 119.0 0.257 3.84 1.26 1212 88 73   230   30
+## bellevegas  910 266 949  88.0 0.259 3.92 1.27 1252 41 82   258    2
+## pk dodgers  741 157 692 145.0 0.257 3.46 1.20 1238 65 87   260    0
+## dembums     818 223 822  96.9 0.267 3.82 1.25 1313 48 68   242   18
+## ottawa      818 205 802 131.0 0.257 3.80 1.25 1205 66 83   255    5
+## bears       830 214 799 129.8 0.253 3.73 1.24 1276 47 87   240   20
+## virginia    920 236 901  82.8 0.261 3.83 1.26  828 59 59   246   14
+## jobu        888 162 745 164.0 0.258 4.12 1.30 1196 68 89   227   33
+## deener      776 164 754 127.9 0.263 3.72 1.25 1168 52 65   244   16
+## sturgeon    772 202 788 117.0 0.260 4.07 1.32 1283 42 89   239   21
+## balco       875 198 821 134.0 0.255 4.32 1.37  993 86 25   222   38
+## counsel     849 195 788 109.9 0.262 3.96 1.28  990 43 52   240   20
 ```
 
 #Hitting Points
 
 ```
 ##            R_pts HR_pts RBI_pts SB_pts AVG_pts total_points
-## marmaduke   17.0   15.0    15.0   16.0     9.0          125
-## pasadena    14.0   17.0    17.0    9.0     4.5          121
-## isotopes     8.0   12.5    10.0   14.0    14.0          114
-## rippe       18.0    8.0    14.0   17.0    18.0          111
-## ottawa      10.5   10.0    12.0   12.5     4.5          106
-## deano        7.0   11.0    11.0    5.0    17.0          104
-## d&s          3.0    4.0     4.0    2.0    11.5          102
-## bellevegas  16.0   18.0    18.0    3.0     7.5           98
-## baycity     10.5   12.5    13.0    8.0     4.5           98
-## pk dodgers   1.0    1.0     1.0   15.0     4.5           96
-## dembums      5.0   14.0     9.0    4.0    16.0           95
-## bears        6.0    9.0     7.0   11.0     1.0           91
-## jobu        13.0    3.0     3.0   18.0     7.5           90
-## virginia    15.0   16.0    16.0    1.0    11.5           89
-## sturgeon     4.0    7.0     5.5    7.0    10.0           76
-## deener       2.0    2.0     2.0   10.0    14.0           74
-## balco       12.0    6.0     8.0   12.5     2.0           64
-## counsel      9.0    5.0     5.5    6.0    14.0           56
+## marmaduke   17.0   15.0    15.0     16     8.5          124
+## pasadena    14.0   17.0    17.0      9     4.5          121
+## isotopes     9.0   12.5    11.0     14    13.5          115
+## rippe       18.0    9.0    14.0     18    18.0          113
+## deano        8.0   11.0    12.0      5    17.0          106
+## d&s          2.0    4.0     4.0      3    11.5          102
+## baycity     11.0   12.5    13.0      8     4.5           99
+## bellevegas  15.0   18.0    18.0      2     8.5           98
+## pk dodgers   1.0    1.0     1.0     15     4.5           96
+## dembums      5.5   14.0    10.0      4    16.0           96
+## ottawa       5.5    8.0     8.0     12     4.5           94
+## bears        7.0   10.0     7.0     11     1.0           93
+## virginia    16.0   16.0    16.0      1    11.5           90
+## jobu        13.0    2.0     2.0     17     7.0           86
+## deener       4.0    3.0     3.0     10    15.0           79
+## sturgeon     3.0    7.0     5.5      7    10.0           75
+## balco       12.0    6.0     9.0     13     2.0           65
+## counsel     10.0    5.0     5.5      6    13.5           56
 ```
 
 #Pitching Points
 
 ```
 ##            ERA_pts WHIP_pts K_pts SV_pts W_pts total_points
-## marmaduke       14       14     5     11   9.0          125
+## marmaduke       14       14     5     11   9.0          124
 ## pasadena        16       16    14      1  12.5          121
-## isotopes        13       13     7     12  10.0          114
-## rippe            6        6     6     10   8.0          111
-## ottawa          10       10    10     14  12.5          106
-## deano           15       15     4     16   3.5          104
+## isotopes        13       13     7     12  10.0          115
+## rippe            6        6     6     10   8.0          113
+## deano           15       15     4     16   3.5          106
 ## d&s             18       18    18      8  15.0          102
+## baycity          7        7    11     18   7.0           99
 ## bellevegas       5        5    13      2  11.0           98
-## baycity          7        7    11     18   7.0           98
 ## pk dodgers      17       17    12     13  15.0           96
-## dembums          9        9    17      6   6.0           95
-## bears           11       11    15      5  15.0           91
-## jobu             2        2     9     15  17.5           90
-## virginia         8        8     1      9   3.5           89
-## sturgeon         3        3    16      3  17.5           76
-## deener          12       12     8      7   5.0           74
-## balco            1        1     3     17   1.0           64
+## dembums          9        9    17      6   6.0           96
+## ottawa          10       10    10     14  12.5           94
+## bears           11       11    15      5  15.0           93
+## virginia         8        8     1      9   3.5           90
+## jobu             2        2     9     15  17.5           86
+## deener          12       12     8      7   5.0           79
+## sturgeon         3        3    16      3  17.5           75
+## balco            1        1     3     17   1.0           65
 ## counsel          4        4     2      4   2.0           56
 ```
 
@@ -117,49 +117,49 @@
 ## 5   Andrelton Simmons   shortstop 534 55 11  7  53 0.254         5.39
 ## 6     Jonathan Schoop second_base 466 52 15  5  53 0.226         3.91
 ## 7      Danny Espinosa second_base 514 53 13  9  54 0.219         2.87
-## 8    Brandon Crawford   shortstop 529 52  9  5  53 0.234        -0.35
-## 9         Brad Miller   shortstop 376 47 10  7  42 0.248        -1.52
-## 10        Zack Cozart   shortstop 500 48  9  4  48 0.240        -2.33
-## 11        Eric Sogard second_base 396 44  4 13  37 0.250        -2.39
-## 12       Rickie Weeks second_base 331 42 10  6  38 0.238        -3.32
-## 13 Adeiny Hechavarria   shortstop 549 47  4  9  48 0.248        -3.74
-## 14     Carlos Sanchez second_base 353 36  3  9  31 0.247        -8.87
-## 15       Andy Parrino second_base 376 39  5  4  35 0.224        -9.30
-## 16     Gordon Beckham second_base 310 33  6  3  31 0.243       -10.46
-## 17   Cliff Pennington second_base 320 33  4  7  29 0.245       -10.92
-## 18       Stephen Drew   shortstop 380 40  9  3  40 0.219       -11.02
-## 19         Ryan Goins second_base 359 35  3  4  32 0.230       -12.02
-## 20       Chris Taylor   shortstop 290 33  3 10  28 0.254       -13.18
-## 21  Willie Bloomquist second_base 262 28  2  4  22 0.258       -13.34
-## 22      Rafael Furcal second_base 231 27  3  6  20 0.253       -14.40
-## 23        Jose Pirela second_base 212 24  5  5  23 0.249       -16.36
-## 24     Logan Forsythe second_base 241 27  5  3  25 0.234       -16.38
-## 25     Kevin Frandsen second_base 204 21  2  2  20 0.270       -16.58
-## 26       Brendan Ryan   shortstop 359 34  3  7  29 0.206       -19.36
-## 27        Grant Green second_base 164 18  3  2  18 0.258       -20.07
-## 28         Mark Ellis second_base 218 22  2  3  19 0.240       -20.18
-## 29  Johnny Giavotella second_base 150 17  2  3  15 0.262       -20.57
-## 30    Eduardo Escobar   shortstop 208 22  3  2  21 0.251       -21.42
-## 31     Derek Dietrich second_base 153 18  5  1  18 0.239       -22.05
-## 32         Nick Punto second_base 204 21  2  4  17 0.226       -22.90
-## 33    Marwin Gonzalez   shortstop 211 22  3  4  21 0.240       -22.99
-## 34       Hernan Perez second_base 128 14  2  4  12 0.251       -24.28
-## 35       Ruben Tejada   shortstop 208 20  2  2  17 0.243       -24.35
-## 36      Andrew Romine   shortstop 205 21  2  7  18 0.236       -24.65
-## 37    Tommy La Stella second_base  90 10  1  1   9 0.270       -24.76
-## 38      Eduardo Nunez   shortstop 143 16  2  5  15 0.258       -25.04
-## 39     Donovan Solano second_base 122 12  1  1  10 0.251       -26.07
-## 40   Jonathan Herrera second_base 150 14  1  3  13 0.235       -26.94
-## 41      Phil Gosselin second_base 113 11  1  1   9 0.248       -27.21
-## 42      Marco Scutaro second_base  66  7  1  1   5 0.265       -27.61
-## 43       Clint Barmes   shortstop 237 20  4  2  21 0.212       -28.06
-## 44          Dean Anna   shortstop 148 16  2  2  14 0.234       -28.48
-## 45  Tyler Pastornicky second_base  85  8  1  2   8 0.248       -29.34
-## 46      Brandon Hicks second_base 144 15  5  1  16 0.203       -29.35
-## 47       Adam Rosales   shortstop 114 13  3  1  12 0.240       -29.38
-## 48       Leury Garcia second_base 151 14  2  8  12 0.215       -29.44
-## 49         Pete Kozma   shortstop 175 16  2  3  16 0.226       -29.63
-## 50       Ryan Roberts second_base  79  9  2  1   8 0.236       -29.98
+## 8         Brad Miller   shortstop 376 47 10  7  42 0.248        -1.52
+## 9         Zack Cozart   shortstop 500 48  9  4  48 0.240        -2.33
+## 10        Eric Sogard second_base 396 44  4 13  37 0.250        -2.39
+## 11       Rickie Weeks second_base 331 42 10  6  38 0.238        -3.32
+## 12 Adeiny Hechavarria   shortstop 549 47  4  9  48 0.248        -3.74
+## 13     Carlos Sanchez second_base 353 36  3  9  31 0.247        -8.87
+## 14       Andy Parrino second_base 376 39  5  4  35 0.224        -9.30
+## 15     Gordon Beckham second_base 310 33  6  3  31 0.243       -10.46
+## 16   Cliff Pennington second_base 320 33  4  7  29 0.245       -10.92
+## 17       Stephen Drew   shortstop 380 40  9  3  40 0.219       -11.02
+## 18         Ryan Goins second_base 359 35  3  4  32 0.230       -12.02
+## 19       Chris Taylor   shortstop 290 33  3 10  28 0.254       -13.18
+## 20  Willie Bloomquist second_base 262 28  2  4  22 0.258       -13.34
+## 21      Rafael Furcal second_base 231 27  3  6  20 0.253       -14.40
+## 22        Jose Pirela second_base 212 24  5  5  23 0.249       -16.36
+## 23     Logan Forsythe second_base 241 27  5  3  25 0.234       -16.38
+## 24     Kevin Frandsen second_base 204 21  2  2  20 0.270       -16.58
+## 25       Brendan Ryan   shortstop 359 34  3  7  29 0.206       -19.36
+## 26        Grant Green second_base 164 18  3  2  18 0.258       -20.07
+## 27         Mark Ellis second_base 218 22  2  3  19 0.240       -20.18
+## 28  Johnny Giavotella second_base 150 17  2  3  15 0.262       -20.57
+## 29    Eduardo Escobar   shortstop 208 22  3  2  21 0.251       -21.42
+## 30     Derek Dietrich second_base 153 18  5  1  18 0.239       -22.05
+## 31         Nick Punto second_base 204 21  2  4  17 0.226       -22.90
+## 32    Marwin Gonzalez   shortstop 211 22  3  4  21 0.240       -22.99
+## 33       Hernan Perez second_base 128 14  2  4  12 0.251       -24.28
+## 34       Ruben Tejada   shortstop 208 20  2  2  17 0.243       -24.35
+## 35      Andrew Romine   shortstop 205 21  2  7  18 0.236       -24.65
+## 36    Tommy La Stella second_base  90 10  1  1   9 0.270       -24.76
+## 37      Eduardo Nunez   shortstop 143 16  2  5  15 0.258       -25.04
+## 38     Donovan Solano second_base 122 12  1  1  10 0.251       -26.07
+## 39   Jonathan Herrera second_base 150 14  1  3  13 0.235       -26.94
+## 40      Phil Gosselin second_base 113 11  1  1   9 0.248       -27.21
+## 41      Marco Scutaro second_base  66  7  1  1   5 0.265       -27.61
+## 42       Clint Barmes   shortstop 237 20  4  2  21 0.212       -28.06
+## 43          Dean Anna   shortstop 148 16  2  2  14 0.234       -28.48
+## 44  Tyler Pastornicky second_base  85  8  1  2   8 0.248       -29.34
+## 45      Brandon Hicks second_base 144 15  5  1  16 0.203       -29.35
+## 46       Adam Rosales   shortstop 114 13  3  1  12 0.240       -29.38
+## 47       Leury Garcia second_base 151 14  2  8  12 0.215       -29.44
+## 48         Pete Kozma   shortstop 175 16  2  3  16 0.226       -29.63
+## 49       Ryan Roberts second_base  79  9  2  1   8 0.236       -29.98
+## 50     Pedro Florimon   shortstop 171 16  2  6  15 0.217       -30.92
 ```
 
 #Top 50 Remaining Hitters
@@ -174,48 +174,48 @@
 ## 6        Shane Victorino    outfield 395 56 10 11  48 0.266        12.19
 ## 7         Trevor Plouffe  third_base 462 57 16  2  60 0.248        11.86
 ## 8              Adam Lind  first_base 470 61 19  1  68 0.272        11.63
-## 9            Carlos Ruiz     catcher 386 41  8  4  41 0.260        10.46
-## 10        Matt Dominguez  third_base 519 57 18  1  63 0.230        10.02
-## 11         David DeJesus    outfield 441 56  9  6  44 0.238         7.80
-## 12       Kendrys Morales          dh 479 59 16  1  66 0.263         7.58
-## 13             Joe Panik second_base 547 56  5  5  47 0.255         7.21
-## 14           DJ LeMahieu second_base 488 51  5 14  47 0.279         7.10
-## 15            B.J. Upton    outfield 493 56 15 17  51 0.215         6.72
-## 16         Josh Rutledge second_base 493 56  9  9  50 0.241         6.68
-## 17         Gregor Blanco    outfield 484 54  5 17  43 0.249         6.49
-## 18       Conor Gillaspie  third_base 441 51 11  2  52 0.252         6.33
-## 19        Everth Cabrera   shortstop 495 60  5 30  38 0.250         6.15
-## 20         Wilmer Flores  third_base 477 49 15  2  56 0.248         5.82
-## 21        Ender Inciarte    outfield 467 52  5 19  35 0.254         5.78
-## 22           Chris Young    outfield 407 52 15 10  51 0.228         5.75
-## 23             Ike Davis  first_base 430 60 17  3  59 0.239         5.45
-## 24     Andrelton Simmons   shortstop 534 55 11  7  53 0.254         5.39
-## 25      Alberto Callaspo  third_base 507 51  9  3  51 0.250         5.31
-## 26           Rene Rivera     catcher 366 39  9  1  41 0.231         5.24
-## 27          Kevin Pillar    outfield 399 47  8 14  47 0.266         5.06
-## 28         Jose Iglesias  third_base 465 51  5 12  45 0.257         4.83
-## 29       Jonathan Schoop second_base 466 52 15  5  53 0.226         3.91
-## 30        Danny Espinosa second_base 514 53 13  9  54 0.219         2.87
-## 31 Christian Bethancourt     catcher 407 34  9  6  41 0.238         2.70
-## 32              Sam Fuld    outfield 452 52  5 18  42 0.232         2.63
-## 33            Jacob Lamb  third_base 420 45 12  3  49 0.250         2.16
-## 34        Dioner Navarro     catcher 235 28  7  1  30 0.263         1.29
-## 35           Ryan Doumit     catcher 294 32  9  2  35 0.237         1.14
-## 36           Brayan Pena     catcher 325 30  5  3  32 0.250         0.11
-## 37      Brandon Crawford   shortstop 529 52  9  5  53 0.234        -0.35
-## 38          Justin Smoak  first_base 387 52 16  1  54 0.240        -0.46
-## 39        J.P. Arencibia     catcher 314 33 13  1  40 0.209        -0.69
-## 40          Nick Swisher  first_base 415 53 14  1  50 0.234        -1.35
-## 41           Brad Miller   shortstop 376 47 10  7  42 0.248        -1.52
-## 42           Daniel Nava    outfield 285 38  6  3  33 0.265        -2.20
-## 43           Zack Cozart   shortstop 500 48  9  4  48 0.240        -2.33
-## 44         Freddy Galvis  third_base 484 44 11  5  48 0.226        -2.36
-## 45           Eric Sogard second_base 396 44  4 13  37 0.250        -2.39
-## 46         Ichiro Suzuki    outfield 381 38  4 12  34 0.267        -2.66
-## 47        Mitch Moreland  first_base 384 48 15  2  51 0.244        -3.09
-## 48        Michael Choice    outfield 310 39 10  3  38 0.243        -3.17
-## 49          Rickie Weeks second_base 331 42 10  6  38 0.238        -3.32
-## 50            Andy Dirks    outfield 314 37  8  5  35 0.257        -3.32
+## 9         Matt Dominguez  third_base 519 57 18  1  63 0.230        10.02
+## 10         David DeJesus    outfield 441 56  9  6  44 0.238         7.80
+## 11             Joe Panik second_base 547 56  5  5  47 0.255         7.21
+## 12           DJ LeMahieu second_base 488 51  5 14  47 0.279         7.10
+## 13            B.J. Upton    outfield 493 56 15 17  51 0.215         6.72
+## 14         Josh Rutledge second_base 493 56  9  9  50 0.241         6.68
+## 15         Gregor Blanco    outfield 484 54  5 17  43 0.249         6.49
+## 16       Conor Gillaspie  third_base 441 51 11  2  52 0.252         6.33
+## 17        Everth Cabrera   shortstop 495 60  5 30  38 0.250         6.15
+## 18         Wilmer Flores  third_base 477 49 15  2  56 0.248         5.82
+## 19           Chris Young    outfield 407 52 15 10  51 0.228         5.75
+## 20             Ike Davis  first_base 430 60 17  3  59 0.239         5.45
+## 21     Andrelton Simmons   shortstop 534 55 11  7  53 0.254         5.39
+## 22      Alberto Callaspo  third_base 507 51  9  3  51 0.250         5.31
+## 23           Rene Rivera     catcher 366 39  9  1  41 0.231         5.24
+## 24          Kevin Pillar    outfield 399 47  8 14  47 0.266         5.06
+## 25         Jose Iglesias  third_base 465 51  5 12  45 0.257         4.83
+## 26       Jonathan Schoop second_base 466 52 15  5  53 0.226         3.91
+## 27        Danny Espinosa second_base 514 53 13  9  54 0.219         2.87
+## 28 Christian Bethancourt     catcher 407 34  9  6  41 0.238         2.70
+## 29              Sam Fuld    outfield 452 52  5 18  42 0.232         2.63
+## 30            Jacob Lamb  third_base 420 45 12  3  49 0.250         2.16
+## 31           Ryan Doumit     catcher 294 32  9  2  35 0.237         1.14
+## 32           Brayan Pena     catcher 325 30  5  3  32 0.250         0.11
+## 33          Justin Smoak  first_base 387 52 16  1  54 0.240        -0.46
+## 34        J.P. Arencibia     catcher 314 33 13  1  40 0.209        -0.69
+## 35          Nick Swisher  first_base 415 53 14  1  50 0.234        -1.35
+## 36           Brad Miller   shortstop 376 47 10  7  42 0.248        -1.52
+## 37           Daniel Nava    outfield 285 38  6  3  33 0.265        -2.20
+## 38           Zack Cozart   shortstop 500 48  9  4  48 0.240        -2.33
+## 39         Freddy Galvis  third_base 484 44 11  5  48 0.226        -2.36
+## 40           Eric Sogard second_base 396 44  4 13  37 0.250        -2.39
+## 41         Ichiro Suzuki    outfield 381 38  4 12  34 0.267        -2.66
+## 42        Mitch Moreland  first_base 384 48 15  2  51 0.244        -3.09
+## 43        Michael Choice    outfield 310 39 10  3  38 0.243        -3.17
+## 44          Rickie Weeks second_base 331 42 10  6  38 0.238        -3.32
+## 45            Andy Dirks    outfield 314 37  8  5  35 0.257        -3.32
+## 46          Geovany Soto     catcher 272 28  9  2  32 0.224        -3.57
+## 47    Adeiny Hechavarria   shortstop 549 47  4  9  48 0.248        -3.74
+## 48       Justin Ruggiano    outfield 315 38 10  7  37 0.239        -4.46
+## 49          Anthony Gose    outfield 347 41  5 20  34 0.236        -4.61
+## 50            Cody Asche  third_base 327 35 11  3  39 0.254        -4.73
 ```
 
 #Top 50 Remaining Pitchers
