@@ -27,16 +27,6 @@ source("calculatestandings.R")
 source("csvwriter.R")
 ```
 
-#league status
-```{r, echo=FALSE}
-standings$dollars_per_pick <-round(standings$dollars_per_pick, 2)
-standings[,c("spent","left","picks_left","dollars_per_pick", "max_bid")]
-dollars_per_pick <- round(sum(standings$left)/sum(standings$picks_left), 2)
-```
-###Total Dollars Left: **$`r sum(standings$left)`**
-###Total Picks Left: **`r sum(standings$picks_left)`**
-###Average Dollars/Pick: **$`r dollars_per_pick`**
-
 #Current Stats
 ```{r, echo=FALSE}
 standings[,c("R","HR","RBI","SB","AVG","ERA","WHIP","K","SV","W","spent","left")]
@@ -52,38 +42,10 @@ standings[,c("R_pts", "HR_pts","RBI_pts","SB_pts","AVG_pts","total_points")]
 standings[,c("ERA_pts","WHIP_pts","K_pts","SV_pts","W_pts","total_points")]
 ```
 
-#Scatter of Remaining Picks vs. Current Points
-```{r pointsgraph, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
-library(ggplot2)
-pointsline <- mean(standings$total_points)
-moneyline <- mean(standings$left)
-
-
-
-moneyvspoints <-    ggplot(data=standings, aes(x=picks_left, y = total_points, label = rownames(standings))) + 
-            geom_point(shape = 1, size = 3) +
-            geom_text(hjust = 1.1) +
-            stat_smooth(method=lm, se=FALSE) +
-            xlab("Picks Remaining") +
-            ylab("Current Points")
-
-moneyvspoints
-```
-
-#Top 50 Hitter Targets
-```{r hittertargets, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
-library(dplyr)
-topremainings <- filter(hitter_projections, status != "drafted",
-                                            position == "second_base" | 
-                                            position == "shortstop"
-                        )
-
-topremainings <- topremainings[1:50,c("Name","position","AB","R","HR","SB","RBI","AVG","dollar_value")]
-topremainings
-```
 
 #Top 50 Remaining Hitters
-```{r remaininghitters, echo=FALSE}
+```{r remaininghitters, echo=FALSE, warning=FALSE, error=FALSE, message = FALSE}
+library(dplyr)
 topremainings <- filter(hitter_projections, status != "drafted")
 topremainings <- topremainings[1:50,c("Name","position","AB","R","HR","SB","RBI","AVG","dollar_value")]
 topremainings
