@@ -6,17 +6,17 @@ for (team in teams) {
       temp <- get(team)
       
       #get team's stats
-      team_R <- sum(temp$R, na.rm=TRUE)
-      team_HR <- sum(temp$HR, na.rm=TRUE)
-      team_RBI <- sum(temp$RBI, na.rm=TRUE)
-      team_SB <- sum(temp$SB, na.rm=TRUE)
-      team_AVG <- sum(temp$AVG*temp$AB, na.rm=TRUE) / sum(temp$AB, na.rm =TRUE)
+      team_R <- sum(temp$R[1:15], na.rm=TRUE)
+      team_HR <- sum(temp$HR[1:15], na.rm=TRUE)
+      team_RBI <- sum(temp$RBI[1:15], na.rm=TRUE)
+      team_SB <- sum(temp$SB[1:15], na.rm=TRUE)
+      team_AVG <- sum(temp$AVG*temp$AB[1:15], na.rm=TRUE) / sum(temp$AB, na.rm =TRUE)
       
-      team_ERA <- sum(temp$ERA * temp$IP, na.rm=TRUE) /sum(temp$IP, na.rm=TRUE) 
-      team_WHIP <- sum(temp$WHIP * temp$IP, na.rm=TRUE) /sum(temp$IP, na.rm=TRUE) 
-      team_K <- sum(temp$K, na.rm=TRUE)
-      team_SV <- sum(temp$SV, na.rm=TRUE)
-      team_W <- sum(temp$W, na.rm=TRUE)
+      team_ERA <- sum(temp$ERA[16:25] * temp$IP[16:25], na.rm=TRUE) /sum(temp$IP[16:25], na.rm=TRUE) 
+      team_WHIP <- sum(temp$WHIP[16:25] * temp$IP[16:25], na.rm=TRUE) /sum(temp$IP[16:25], na.rm=TRUE) 
+      team_K <- sum(temp$K[16:25], na.rm=TRUE)
+      team_SV <- sum(temp$SV[16:25], na.rm=TRUE)
+      team_W <- sum(temp$W[16:25], na.rm=TRUE)
       
       team_salary <- sum(temp$salary, na.rm=TRUE)
       salary_left <- 260-sum(temp$salary, na.rm=TRUE)
