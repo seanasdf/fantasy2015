@@ -175,7 +175,9 @@ hitter_projections <- hitter_projections[hitter_projections$AB > 1,]
 pitcher_projections <- read.csv("pitchers.csv", stringsAsFactors=FALSE)
 
 #keep only relevant columns
-pitcher_projections <- pitcher_projections[,c(1:2,4,7,8,12,14,20)]
+pitcher_projections <- pitcher_projections[,c("Name","W","ERA","SV","IP","SO","WHIP","playerid")]
+
+
 pitcher_projections$position <- "pitcher"
 
 #rename columns
