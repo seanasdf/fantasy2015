@@ -182,7 +182,7 @@ pitcher_projections$position <- "pitcher"
 
 #rename columns
 names(pitcher_projections)[1] <- "Name"
-names(pitcher_projections)[6] <- "K"
+names(pitcher_projections)[14] <- "K"
 
 #reorder columns
 pitcher_projections <- pitcher_projections[c("Name","position","playerid","IP","ERA","WHIP","W","SV","K")]
